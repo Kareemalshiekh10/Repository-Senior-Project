@@ -3629,7 +3629,7 @@ input::-webkit-inner-spin-button {
 
 .section-footer {
     background: #28304B;
-    height: 40vh;
+    height: 27vh;
 }
 
 .footer-wrap {
@@ -3677,7 +3677,7 @@ input::-webkit-inner-spin-button {
 }
 
 .footer-wrap>div>div>p {
-    padding-top: 2rem;
+    padding-top: 0.6rem;
     color: var(--color-light-1);
     font-size: 1.1rem;
 }
@@ -3697,7 +3697,6 @@ input::-webkit-inner-spin-button {
 .footer-wrap>div>div>p>a:hover {
     color: orange;
 }
-
 .master-cards .payment-cards {
     margin-top: 0.6rem;
     display: -webkit-box;
