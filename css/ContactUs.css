@@ -1,0 +1,109 @@
+/* Reset some default styles and apply the color scheme */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Background color */
+}
+
+.contact-header {
+    background-color: #28304B; /* Primary Color (Navbar Background) */
+    color: #fff; /* Text Color */
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-header h1 {
+    margin: 0;
+}
+.contact-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #fff; /* Background Color for Content */
+    border-radius: 10px;
+    box-shadow: 0 0 20px #28304B;
+    padding: 20px;
+}
+
+.contact-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #ccc; /* Border Color */
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #28304B;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #28304B; /* Primary Color (Navbar Background) */
+    color: #fff; /* Text Color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #1F2538; /* Darker shade for hover effect */
+}
+
+.faq-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.faq-question {
+    margin: 0;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-arrow {
+    font-size: 18px ; 
+}
+
+.faq-answer {
+    display: none;
+}
+
+.faq-item.expanded .faq-answer {
+    display: block;
+}
+
+.faq-item.collapsed .faq-answer {
+    display: none;
+}
+
+.faq-item {
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #f9f9f9;
+}
+

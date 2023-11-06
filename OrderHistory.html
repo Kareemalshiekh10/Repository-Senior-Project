@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order History</title>
+    <link rel="stylesheet" href="./css/OrderHistory.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/Footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="main-navbar shadow-sm sticky-top">
+        <div class="top-navbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2 my-auto d-none d-sm-none d-md-block d-lg-block">
+                        <h5 class="brand-name">Intell$Mart</h5>
+                    </div>
+                    <div class="col-md-5 my-auto">
+                        <form role="search">
+                            <div class="input-group">
+                                <input type="search" placeholder="Search your product" class="form-control" />
+                                <button class="btn bg-white" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                                <button class="btn bg-white" type="button">
+                                    <i class="fa fa-camera"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-5 my-auto">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="signin.html">
+                                    <i class="fa fa-android"></i> Chatbot
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="signin.html">
+                                    <i class="fa fa-shopping-cart"></i> Cart (0)
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="signin.html">
+                                    <i class="fa fa-heart"></i> Wishlist (0)
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-user"></i> Username 
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a></li>
+                                <li><a class="dropdown-item" href="OrderHistory.html"><i class="fa fa-list"></i> My Orders</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa fa-heart"></i> My Wishlist</a></li>
+                                <li><a class="dropdown-item" href="cart.html"><i class="fa fa-shopping-cart"></i> My Cart</a></li>
+                                <li><a class="dropdown-item" href="signin.html"><i class="fa fa-sign-out"></i> Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand d-block d-sm-block d-md-none d-lg-none" href="#">
+                    Intell$Mart
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="allCategoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                All Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="allCategoriesDropdown">
+                                <li><a class="dropdown-item" href="#">Category 1</a></li>
+                                <li><a class="dropdown-item" href="#">Category 2</a></li>
+                                <li><a class="dropdown-item" href="#">Category 3</a></li>
+                                <!-- Add more categories -->
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">New Arrivals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Electronics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fashions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News and Announcements </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+
+    <div class="container">
+        <h1 class="mt-5">Order History</h1>
+        <div class="order-history-search mt-3">
+            <!-- Add a search bar for filtering orders -->
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search by Order Number or Date">
+                <div class="input-group-append">
+                    <button class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered mt-4">
+                <thead>
+                    <tr>
+                        <th>Order Date</th>
+                        <th>Order Number</th>
+                        <th>Total Amount</th>
+                        <th>Order Status</th>
+                        <th>Products</th>
+                        <th>Order Summary</th>
+                        <th>Shipping Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sample order with image, more details, and order summary -->
+                    <tr>
+                        <td>2023-11-01</td>
+                        <td><a href="#">Order #12345</a></td>
+                        <td>$100.00</td>
+                        <td>Shipped</td>
+                        <td>
+                            <!-- Product 1 -->
+                            <div class="product">
+                                <img src="./img/shoes.jpeg" alt="Product 1">
+                                <span>Product Name 1</span>
+                            </div>
+                            <!-- Product 2 -->
+                            <div class="product">
+                                <img src="./img/dress.jpeg" alt="Product 2">
+                                <span>Product Name 2</span>
+                            </div>
+                        </td>
+                        <td>
+                            <!-- Order summary -->
+                            <p>Items: 2</p>
+                            <p>Subtotal: $90.00</p>
+                            <p>Shipping: $10.00</p>
+                        </td>
+                        <td>
+                            <!-- Shipping details -->
+                            <p>Address: 123 Main St, City</p>
+                            <p>Shipping Method: Express</p>
+                        </td>
+                    </tr>
+                    <!-- Repeat this row structure for each order -->
+                    <tr>
+                        <td>2023-11-01</td>
+                        <td><a href="#">Order #12345</a></td>
+                        <td>$100.00</td>
+                        <td>Shipped</td>
+                        <td>
+                            <!-- Product 1 -->
+                            <div class="product">
+                                <img src="./img/shoes.jpeg" alt="Product 1">
+                                <span>Product Name 1</span>
+                            </div>
+                            
+                            
+                        </td>
+                        <td>
+                            <!-- Order summary -->
+                            <p>Items: 1</p>
+                            <p>Subtotal: $90.00</p>
+                            <p>Shipping: $10.00</p>
+                        </td>
+                        <td>
+                            <!-- Shipping details -->
+                            <p>Address: 123 Main St, City</p>
+                            <p>Shipping Method: Express</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2023-11-01</td>
+                        <td><a href="#">Order #12345</a></td>
+                        <td>$100.00</td>
+                        <td>Shipped</td>
+                        <td>
+                            <!-- Product 1 -->
+                            <div class="product">
+                                <img src="./img/shoes.jpeg" alt="Product 1">
+                                <span>Product Name 1</span>
+                            </div>
+                            <!-- Product 2 -->
+                            <div class="product">
+                                <img src="./img/dress.jpeg" alt="Product 2">
+                                <span>Product Name 2</span>
+                            </div>
+                            <!-- Product 3 -->
+                            <div class="product">
+                                <img src="./img/dress.jpeg" alt="Product 2">
+                                <span>Product Name 2</span>
+                            </div>
+                        </td>
+                        <td>
+                            <!-- Order summary -->
+                            <p>Items: 3</p>
+                            <p>Subtotal: $90.00</p>
+                            <p>Shipping: $10.00</p>
+                        </td>
+                        <td>
+                            <!-- Shipping details -->
+                            <p>Address: 123 Main St, City</p>
+                            <p>Shipping Method: Express</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- Recommended Items Section (Outside Order History) -->
+    <div class="recommended-items">
+        <h2>Recommended Items</h2>
+        <div class="row">
+            <!-- Recommended Product 1 -->
+            <div class="col-md-4">
+                <div class="recommended-product">
+                    <img src="./img/dress.jpeg" alt="Recommended Product 1">
+                    <p>Recommended Product 1</p>
+                </div>
+            </div>
+            <!-- Recommended Product 2 -->
+            <div class="col-md-4">
+                <div class="recommended-product">
+                    <img src="./img/shoes.jpeg" alt="Recommended Product 2">
+                    <p>Recommended Product 2</p>
+                </div>
+            </div>
+            <!-- Recommended Product 3 -->
+            <div class="col-md-4">
+                <div class="recommended-product">
+                    <img src="./img/dress.jpeg" alt="Recommended Product 3">
+                    <p>Recommended Product 3</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="recommended-product">
+                    <img src="./img/dress.jpeg" alt="Recommended Product 3">
+                    <p>Recommended Product 4</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Site footer -->
+    <footer>
+        <div class="footer-gray">
+          <div class="footer-custom">
+            <div class="footer-lists">
+              <div class="footer-list-wrap">
+                <h6 class="ftr-hdr">Order Toll Free</h6>
+                <ul class="ftr-links-sub">
+                  <li>800-952-5592</li>
+                </ul>
+                <h6 class="ftr-hdr">International</h6>
+                <ul class="ftr-links-sub">
+                  <li><a href="http://www.art.fr" rel="nofollow">France</a></li>
+                  <li><a href="https://www.art.co.uk" rel="nofollow">United Kingdom</a></li>
+                </ul>
+              </div>
+              <!--/.footer-list-wrap-->
+              <div class="footer-list-wrap">
+                <h6 class="ftr-hdr">Customer Service</h6>
+                <ul class="ftr-links-sub">
+                  <li><a href="/help/talktous.html" rel="nofollow">Contact Us</a></li>
+                  <li><a href="/help/placingorders.html" rel="nofollow">Ordering</a></li>
+                  <li><a href="/help/shipping.html" rel="nofollow">Shipping &amp; Delivery</a></li>
+                  <li><a href="/help/shippingreturns.html" rel="nofollow">Returns</a></li>
+                  <li><a href="/help/international-shipping.html" rel="nofollow">International Orders</a></li>
+                  <li><a href="/~/egift-cards/" rel="nofollow">Gift Cards</a></li>
+                  <li><a href="/help/faq.html" rel="nofollow">FAQs</a></li>
+                </ul>
+              </div>
+              <div class="footer-list-wrap">
+                <h6 class="ftr-hdr">About Art.com</h6>
+                <ul class="ftr-links-sub">
+                  <li><a href="/asp/aboutus/default-asp/_/posters.htm" rel="nofollow">Our Company</a></li>
+                  <li><a href="http://corporate.art.com/careers" rel="nofollow">Careers</a></li>
+                  <li><a href="/asp/landing/artistrising" rel="nofollow">Artist Rising</a></li>
+                  <li><a href="/~/art-for-business" rel="nofollow">Business &amp; Trade Sales</a></li>
+                  <li><a href="http://affiliates.art.com/index.aspx" rel="nofollow">Affiliate Program</a></li>
+                  <li><a href="/catalog" rel="nofollow"><strong>Shop Our Catalog</strong></a></li>
+                  <li><a href="http://blog.art.com" rel="nofollow">ART.COM BLOG</a></li>
+                </ul>
+              </div>
+              <!--/.footer-list-wrap-->
+              <div class="footer-list-wrap">
+                <h6 class="ftr-hdr">My Account</h6>
+                <ul class="ftr-links-sub">
+                  <art:content rule="!loggedin">
+                    <li class="ftr-Login"><span class="link login-trigger">Access My Account</span></li>
+                    <li><span class="link" onclick="link('/asp/secure/your_account/track_orders-asp/_/posters.htm')">Track My Order</span></li>
+                  </art:content>
+                  <art:content rule="loggedin">
+                    <li class="ftr-Login"><span class="link ftr-access-my-account">Access My Account</span></li>
+                    <li><span class="link" onclick="window.location.href = getProfileKey() + '?pagetype=oh';">Track My Order</span></li>
+                  </art:content>
+                </ul>
+              </div>
+              <!--/.footer-list-wrap-->
+            </div>
+            <!--/.footer-lists-->
+            <div class="footer-email">
+              <h6 class="ftr-hdr">Sign up for exclusive offers and inspiration</h6>
+              <div id="ftr-email" class="ftr-email-form">
+                <form id="ftrEmailForm" method="post" action="http://em.art.com/pub/rf">
+                  <div class="error">Please enter a valid email address</div>
+                  <input type="text" name="email_address_" id="ftrEmailInput" class="input" placeholder="Enter email address" />
+                  <!--
+                      -->
+                  <input type="submit" class="button" value="SUBMIT" />
+                  <input type="hidden" name="country_iso2" value="">
+                  <input type="hidden" name="language_iso2" value="en">
+                  <input type="hidden" name="site_domain" value="art.com">
+                  <input type="hidden" name="email_acq_source" value="01-000001">
+                  <input type="hidden" name="email_acq_date" value="" id="ftr-email-date">
+                  <input type="hidden" name="brand_id" value="ART">
+                  <input type="hidden" name="_ri_" value="X0Gzc2X%3DWQpglLjHJlYQGnp51yrMf2qXdC9tjU8pzgMtwfYzaVwjpnpgHlpgneHmgJoXX0Gzc2X%3DWQpglLjHJlYQGnyLSq2fzdkuzdzglHMsUhgeNzaSgkk">
+                </form>
+              </div>
+              <!--/.ftr-email-form-->
+              <div class="ftr-email-privacy-policy"></div>
+            </div>
+            <!--/.footer-email-->
+            <div class="footer-social">
+              <h6 class="ftr-hdr">Follow Us</h6>
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/art.com" title="Facebook" onclick="_gaq.push(['_trackSocial', 'Facebook', 'Follow', 'Footer', 'undefined', 'True']);">
+                    <img width="24" height="24" alt="Like us on Facebook" src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/fb.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://plus.google.com/108089796661280870153" title="Google+" onclick="_gaq.push(['_trackSocial', 'GooglePlus', 'Follow', 'Footer', 'undefined', 'True']);">
+                    <img width="24" height="24" alt="Follow us on Google+" src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/gplus.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://pinterest.com/artdotcom/" target="_blank">
+                    <img width="24" height="24" alt="Follow us on Pinterest" src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/pin-badge.png">
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="http://instagram.com/artdotcom/">
+                    <img width="24" height="24" alt="Follow us on Instagram" src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/instagram-badge.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com/artdotcom" title="Twitter" onclick="_gaq.push(['_trackSocial', 'Twitter', 'Follow', 'Footer', 'undefined', 'True']);">
+                    <img width="67" alt="Follow us on Twitter" src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/twitter.png">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--/.footer-social-->
+            <div class="footer-legal">
+              <p> <a href="/help/privacy-policy.html" rel="nofollow">Privacy Policy</a> | <a href="/help/terms-of-use.html" rel="nofollow">Terms of Use</a> | <a href="/help/terms-of-sale.html" rel="nofollow">Terms of Sale</a></p>
+             
+            </div>
+            <!--/.footer-legal-->
+            
+            <!--/.footer-payment-->
+          </div>
+          <!--/.footer-custom-->
+        </div>
+        <!--/.footer-gray-->
+      </footer>
+
+    <!-- Add Bootstrap's JavaScript and jQuery if needed -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/OrderHistory.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
