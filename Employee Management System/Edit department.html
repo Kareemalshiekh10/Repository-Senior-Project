@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Management System</title>
-    <link rel="stylesheet" href="./css/Add employee.css">
     <link rel="stylesheet" href="./css/Sidebar.css">
+    <link rel="stylesheet" href="./css/Edit department.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
@@ -27,10 +27,11 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a href="#">Leave Management</a>
+                    <a href="#">Department</a>
                     <div class="dropdown-content">
-                        <a href="#">Request Leave</a>
-                        <a href="#">Leave History</a>
+                        <a href="#">View Department</a>
+                        <a href="#">New Department</a>
+                        <a href="#">Edit Department</a>
                     </div>
                 </div>
                 <a href="#">Performance</a>
@@ -43,45 +44,35 @@
                 <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
                 <h1>Employee Management System</h1>
             </header>
-
-            <!-- Your form or content for adding a new employee -->
-            <form id="employeeForm">
+        </div>
+        <div class="container">
+            <h2>Edit Employee</h2>
+            <form id="editDepartmentForm">
                 <div class="form-group">
-                    <label for="employeeName">Employee Name:</label>
-                    <input type="text" id="employeeName" name="employeeName" class="form-control" required>
+                    <label for="departmentName">Department Name:</label>
+                    <input type="text" id="departmentName" name="departmentName" placeholder="e.g., Human Resources" required>
                 </div>
-
                 <div class="form-group">
-                    <label for="employeeEmail">Employee Email:</label>
-                    <input type="email" id="employeeEmail" name="employeeEmail" class="form-control" required>
+                    <label for="departmentDescription">Description:</label>
+                    <textarea id="departmentDescription" name="departmentDescription" rows="4" placeholder="e.g., Responsible for managing workforce..." required></textarea>
                 </div>
-
                 <div class="form-group">
-                    <label for="employeePhone">Phone Number:</label>
-                    <input type="tel" id="employeePhone" name="employeePhone" class="form-control">
+                    <label for="departmentHead">Department Head:</label>
+                    <input type="text" id="departmentHead" name="departmentHead" placeholder="e.g., John Doe">
                 </div>
-
                 <div class="form-group">
-                    <label for="employeeAddress">Address:</label>
-                    <input type="text" id="employeeAddress" name="employeeAddress" class="form-control">
+                    <label for="departmentLocation">Location:</label>
+                    <input type="text" id="departmentLocation" name="departmentLocation" placeholder="e.g., Building A, Floor 3">
                 </div>
-
                 <div class="form-group">
-                    <label for="employeePosition">Position:</label>
-                    <input type="text" id="employeePosition" name="employeePosition" class="form-control">
+                    <label for="departmentEmployeesCount">Employees Count:</label>
+                    <input type="number" id="departmentEmployeesCount" name="departmentEmployeesCount" placeholder="e.g., 25" required>
                 </div>
-
                 <div class="form-group">
-                    <label for="employeeDepartment">Department:</label>
-                    <input type="text" id="employeeDepartment" name="employeeDepartment" class="form-control">
+                    <label for="departmentCreatedAt">Created At:</label>
+                    <input type="date" id="departmentCreatedAt" name="departmentCreatedAt" placeholder="e.g., YYYY-MM-DD" required>
                 </div>
-
-                <div class="form-group">
-                    <label for="employeeSalary">Salary:</label>
-                    <input type="number" id="employeeSalary" name="employeeSalary" class="form-control">
-                </div>
-                <br>
-                <input type="submit" value="Add Employee" class="btn btn-primary">
+                <input type="submit" value="Update Department">
             </form>
         </div>
     </div>

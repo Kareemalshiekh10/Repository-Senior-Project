@@ -53,3 +53,16 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #546987;
 }
+textarea {
+    width: 100%; /* This ensures the textarea fills the entire width of its container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+textarea:focus {
+    border-color: #384863;
+    outline: none;
+}
