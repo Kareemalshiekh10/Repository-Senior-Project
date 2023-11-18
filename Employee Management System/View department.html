@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Management System</title>
     <link rel="stylesheet" href="./css/Sidebar.css">
-    <link rel="stylesheet" href="./css/View employee.css">
+    <link rel="stylesheet" href="./css/View department.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
@@ -27,17 +27,18 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a href="#">Leave Management</a>
+                    <a href="#">Department</a>
                     <div class="dropdown-content">
-                        <a href="#">Request Leave</a>
-                        <a href="#">Leave History</a>
+                        <a href="#">View Department</a>
+                        <a href="#">New Department</a>
+                        <a href="#">Edit Department</a>
                     </div>
                 </div>
                 <a href="#">Performance</a>
                 <!-- Add more navigation links as needed -->
             </nav>
         </div>
-        
+
         <div class="content">
             <header>
                 <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
@@ -45,61 +46,70 @@
             </header>
 
             <section>
-                <h2>Employee Table</h2>
+                <h2>Department Table</h2>
                 <table>
                     <thead>
                         <tr>
                             <th>ID</th>
                             <th>Name</th>
-                            <th>Department</th>
-                            <th>Position</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Joining Date</th>
-                            <th>Action</th> <!-- New column for delete buttons -->
+                            <th>Description</th>
+                            <th>Head</th>
+                            <th>Location</th> <!-- New column: Location -->
+                            <th>Employees Count</th> <!-- New column: Employees Count -->
+                            <th>Created At</th> <!-- New column: Created At -->
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <tr data-id="1">
+                        <tr data-id="1" data-name="IT">
                             <td>1</td>
-                            <td>John Doe</td>
                             <td>IT</td>
-                            <td>Developer</td>
-                            <td>john.doe@example.com</td>
-                            <td>(555) 123-4567</td>
+                            <td>Information Technology</td>
+                            <td>John Doe</td>
+                            <td>Office A</td>
+                            <td>25</td>
                             <td>2023-01-01</td>
-                            <td><button onclick="deleteEmployee(1)">Delete</button> <button onclick="editEmployee(1)">Edit</button></td>
+                            <td><button onclick="deleteDepartment(1)">Delete</button> <button
+                                    onclick="editDepartment(1)">Edit</button></td>
                         </tr>
-                    </tr>
+                        </tr>
                         <tr>
-                            <tr data-id="2">
+                        <tr data-id="2" data-name="HR">
                             <td>2</td>
-                            <td>Jane Smith</td>
                             <td>HR</td>
-                            <td>Manager</td>
-                            <td>jane.smith@example.com</td>
-                            <td>(555) 987-6543</td>
+                            <td>Human Resources</td>
+                            <td>Jane Smith</td>
+                            <td>Office B</td>
+                            <td>18</td>
                             <td>2023-02-15</td>
-                            <td><button onclick="deleteEmployee(2)">Delete</button> <button onclick="editEmployee(2)">Edit</button></td>
+                            <td><button onclick="deleteDepartment(2)">Delete</button> <button
+                                    onclick="editDepartment(2)">Edit</button></td>
                         </tr>
-                    </tr>
+                        </tr>
                         <tr>
-                            <tr data-id="3">
+                        <tr data-id="3" data-name="Finance">
                             <td>3</td>
-                            <td>Bob Johnson</td>
                             <td>Finance</td>
-                            <td>Accountant</td>
-                            <td>bob.johnson@example.com</td>
-                            <td>(555) 876-5432</td>
+                            <td>Finance Department</td>
+                            <td>Bob Johnson</td>
+                            <td>Office C</td>
+                            <td>30</td>
                             <td>2023-03-20</td>
-                            <td><button onclick="deleteEmployee(3)">Delete</button> <button onclick="editEmployee(3)">Edit</button></td>
+                            <td><button onclick="deleteDepartment(3)">Delete</button> <button
+                                    onclick="editDepartment(3)">Edit</button></td>
                         </tr>
-                    </tr>
+                        </tr>
                         <!-- Add more rows as needed -->
                     </tbody>
                 </table>
             </section>
+            <!-- Add a section to display employees -->
+            <section id="employeeList">
+                <h2>Employees in Department</h2>
+                <ul id="employeeDetails"></ul>
+            </section>
+
         </div>
     </div>
 
@@ -107,7 +117,7 @@
         <p>&copy; 2023 Employee Management System</p>
     </footer>
 
-    <script src="./js/View employee.js"></script>
+    <script src="./js/View department.js"></script>
     <script src="./js/sidebar.js"></script>
 </body>
 
