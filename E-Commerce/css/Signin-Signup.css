@@ -4,7 +4,6 @@ body {
     background: url('login.png') no-repeat center center fixed;
     background-size: cover;
     background-color: #f8f9fa;
-    background-blur: 5px;
 }
 
 .center-content {
@@ -17,9 +16,11 @@ body {
 
 .login-heading {
     font-size: 2rem;
-    color: #fff; /* Updated text color */
-    margin-bottom: 20px;
-}
+    color: #fff; 
+    margin-bottom: 10px;
+
+} 
+
 
 .card {
     margin-top: 100px;
@@ -27,6 +28,13 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: rgb(250, 248, 248);
 }
+.card2 {
+    margin-top: 200px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgb(250, 248, 248);
+}
+
 
 .card-header {
     background-color: rgb(40, 48, 75); /* Updated header background color */
