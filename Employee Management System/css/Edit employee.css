@@ -2,12 +2,11 @@
         
 .container {
     width: 60%;
-
+    margin-top: 50px;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Centering the form */
     position: absolute;
     top: 45%;
     left: 50%;
@@ -27,26 +26,19 @@ label {
     font-weight: bold;
 }
 
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: border-color 0.3s;
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="tel"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 input[type="text"]:focus {
-    border-color: #384863;
-    outline: none;
-}
-input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: border-color 0.3s;
-}
-input[type="email"]:focus {
     border-color: #384863;
     outline: none;
 }
@@ -63,4 +55,17 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #546987;
+}
+textarea {
+    width: 100%; /* This ensures the textarea fills the entire width of its container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+textarea:focus {
+    border-color: #384863;
+    outline: none;
 }
