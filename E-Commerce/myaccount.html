@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyAccount</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/myaccount.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <div class="main-navbar shadow-sm sticky-top">
+        <div class="top-navbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2 my-auto d-none d-sm-none d-md-block d-lg-block">
+                        <h5 class="brand-name">Intell$Mart</h5>
+                    </div>
+                    <div class="col-md-5 my-auto">
+                        <form role="search">
+                            <div class="input-group">
+                                <input type="search" placeholder="Search your product" class="form-control" />
+                                <button class="btn bg-white" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-5 my-auto">
+                        <ul class="nav justify-content-end">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-shopping-cart"></i> Cart (0)
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-heart"></i> Wishlist (0)
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-user"></i> Username
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa fa-list"></i> My Orders</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa fa-heart"></i> My Wishlist</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa fa-shopping-cart"></i> My
+                                            Cart</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand d-block d-sm-block d-md-none d-lg-none" href="#">
+                    Intell$Mart
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="allCategoriesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                All Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="allCategoriesDropdown">
+                                <li><a class="dropdown-item" href="#">Category 1</a></li>
+                                <li><a class="dropdown-item" href="#">Category 2</a></li>
+                                <li><a class="dropdown-item" href="#">Category 3</a></li>
+                                <!-- Add more categories -->
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">New Arrivals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Electronics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fashions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Accessories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Appliances</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Chatbot</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="sidebare">
+        <div class="menubar">
+            <i class="fas fa-bars" id="fabar1"></i>
+            <i class="fas fa-bars" id="fabar2"></i>
+            <i class="fas fa-bars" id="fabar3"></i>
+        </div>
+        <div class="itemspart">
+            <ul>
+                <li class="menuitems close">
+                    <a href="myaccount/Myaccount.html" style="--clr:#8d5d9b;"><i class="fas fa-user icon"></i><span
+                            class="text">MyAccount</span></a>
+                </li>
+                <li class="menuitems ">
+                    <a href="#" style="--clr:rgb(161, 66, 66);"><i class="fas fa-inbox icon"></i><span
+                            class="text">Inbox</span></a>
+                </li>
+                <li class="menuitems ">
+                    <a href="#" style="--clr:#878147;"><i class="fas fa-shopping-cart icon"></i><span
+                            class="text">Orders</span></a>
+                </li>
+                <li class="menuitems ">
+                    <a href="#" style="--clr:rgb(73, 161, 61);"><i class="fas fa-heart icon"></i><span
+                            class="text">Saved
+                            Items</span></a>
+                </li>
+                <li class="menuitems ">
+                    <a href="#" style="--clr:rgb(42, 130, 127);"><i class="fas fa-credit-card icon"></i><span
+                            class="text">Payment</span></a>
+                </li>
+                <li class="menuitems ">
+                    <a href="#" style="--clr:rgb(117, 46, 111);"><i class="fas fa-gift icon"></i><span
+                            class="text">Vouchers</span></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <section class="container">
+        <header>
+            <h3>MyProfile</h3>
+        </header>
+        <div class="divprofile">
+            <form class="profile" action="#">
+                <div class="image-box">
+                    <img class="image-box" src="img/profile.png" alt="">
+                </div>
+                <div class="forminfo">
+                    <div class="person-info">
+                        <label>Full Name</label>
+                        <input type="text" placeholder=" Aya " required>
+                    </div>
+
+                    <div class="person-info">
+                        <label>Last Name</label>
+                        <input type="text" placeholder=" Ahmed " required>
+                    </div>
+
+                    <div class="person-info">
+                        <label>Date of Birth</label>
+                        <input type="date" placeholder="Enter your  Birthday" required>
+                    </div>
+                </div>
+                <button class="updatebutton">
+                    <span class="inputbutton">Update Info</span>
+                </button>
+
+            </form>
+            <header>
+                <h3>Security</h3>
+            </header>
+            <form class="Security" action="#">
+                <div class="forminfo">
+                    <div class="person-info">
+                        <label>Email</label>
+                        <input type="email" placeholder=" Aya@gmail.com " required>
+                    </div>
+
+                    <div class="person-info">
+                        <label>password</label>
+                        <input type="password" required>
+                    </div>
+
+                    <div class="person-info">
+                        <label>Phone number</label>
+                        <input type="number" placeholder="Enter your phone number" required>
+                    </div>
+                </div>
+
+                <button class="updatebutton">
+                    <span class="inputbutton">Update Info</span>
+                </button>
+
+            </form>
+            <header>
+                <h3>Default Adderss</h3>
+            </header>
+            <form class="address" action="#">
+                <div class="forminfo">
+                    <h4>Home</h4>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+
+                    <input type="submit" value="Submit">
+                </div>
+
+                <button class="updatebutton">
+                    <span class="inputbutton">Update Info</span>
+                </button>
+
+            </form>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/myaccount.js"></script>
+
+</body>
+
+</html>
