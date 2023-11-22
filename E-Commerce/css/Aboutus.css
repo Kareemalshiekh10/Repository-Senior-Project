@@ -1,0 +1,566 @@
+.main-navbar{
+    border-bottom: 1px solid #ccc;
+}
+.main-navbar .top-navbar{
+    background-color: #28304B;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main-navbar .top-navbar .brand-name{
+    color: #fff;
+}
+.main-navbar .top-navbar .nav-link{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.main-navbar .top-navbar .dropdown-menu{
+    padding: 0px 0px;
+    border-radius: 0px;
+}
+.main-navbar .top-navbar .dropdown-menu .dropdown-item{
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+.main-navbar .top-navbar .dropdown-menu .dropdown-item i{
+    width: 20px;
+    text-align: center;
+    color: #28304B;
+    font-size: 14px;
+}
+.main-navbar .navbar{
+    padding: 0px;
+    background-color: #ddd;
+}
+.main-navbar .navbar .nav-item .nav-link{
+    padding: 8px 20px;
+    color: #000;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-navbar .top-navbar .nav-link{
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
+
+.FirstInPage {
+    background-image: url(BgForAboutUs1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+
+}
+.FirstHead{
+    color: #f9f7f7;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 300px;
+    padding-left: 10%;
+    
+}   
+.ParaInBg{
+    text-align: center;
+    color: #fcfafa;
+    padding-left: 16%;
+    font-size: 28px;
+    padding-top: 7%;
+}
+.ButtonInPg{
+    font-size: large;
+    text-decoration: none;
+    padding-left: 5%;
+    padding-top: 100px;
+    padding-bottom: 150px;
+       
+}
+.ButtonInPgDiv
+{ text-align: center;
+
+}
+.Features h2{
+    text-align: center;
+    color: #000;
+    margin-top: 20px;
+
+}
+.Feature1{
+    background-color: #28304B;
+    border-radius: 20px;
+    color: #fff;
+    height: 100%;
+    padding: 50px 10px;
+    margin-right: 250px;
+    margin-left: 250px;
+    display: flex;
+    
+   
+
+}
+.Feature1image img{
+width: 500px;
+padding-right: 20px;
+
+
+}
+.Feature1 p{
+    box-sizing: border-box;
+    margin-bottom: 5rem;
+  
+  font-weight: 500;
+  color: inherit;
+}
+
+.Feature2{
+    margin-top: 20px;
+    background-color: #28304B;
+    border-radius: 20px;
+    color: #fff;
+    height: 100%;
+    padding: 50px 10px;
+    margin-right: 250px;
+    margin-left: 250px;
+    display: flex;
+    
+   
+
+}
+.Feature2image img{
+width: 500px;
+padding-right: 20px;
+
+
+}
+.Feature2 p{
+    box-sizing: border-box;
+    margin-bottom: 5rem;
+  font-family: inherit;
+  font-weight: 500;
+  color: inherit;
+}
+
+.Feature3{
+    margin-top: 20px;
+    background-color:#28304B;
+    border-radius: 20px;
+    color: #fff;
+    height: 100%;
+    padding: 50px 10px;
+    margin-right: 250px;
+    margin-left: 250px;
+    display: flex;
+
+    
+   
+
+}
+.Feature3image img{
+width: 500px;
+padding-right: 20px;
+
+
+}
+.Feature3 p{
+    box-sizing: border-box;
+    margin-bottom: 5rem;
+  
+  font-weight: 500;
+  color: inherit;
+}
+#Text1{
+    border-radius: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+
+}
+#h2text1{
+    margin-top: 20px;
+
+    color: #000;
+    margin-left: 15px;
+
+}
+#ptext1{
+    font-style: inherit;
+    margin: auto;
+    font-size: 1.3rem;
+    font-weight: 400;
+  line-height: 1.4;
+  color: #212529;
+ 
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    
+    background-color: #fcfdff; /* Background color */
+}
+
+.contact-header {
+    background-color: #28304B; /* Primary Color (Navbar Background) */
+    color: #fff; /* Text Color */
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-header h1 {
+    margin: 0;
+}
+.contact-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #fff; /* Background Color for Content */
+    border-radius: 10px;
+    box-shadow: 0 0 20px #28304B;
+    padding: 20px;
+}
+
+.contact-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #ccc; /* Border Color */
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #28304B;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #28304B; /* Primary Color (Navbar Background) */
+    color: #fff; /* Text Color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #1F2538; /* Darker shade for hover effect */
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.footer-gray {
+  background-color: #28304B;
+  width: 100%;
+}
+
+.footer-custom {
+  color: #ddd;
+  font: normal normal 12px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  max-width: 1800px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.footer-custom:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.footer-lists:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.ftr-hdr {
+  color: #0d6efd;
+  font: 22px/1.4 'BebasNeueRegular', BebasNeue, 'Bebas Neue', Arial, sans-serif;
+  margin: 1em 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .ftr-hdr {
+    font-size: 18px;
+  }
+}
+
+.footer-list-wrap {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 568px) {
+  .footer-list-wrap {
+    width: 33.3333%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-list-wrap {
+    width: 25%;
+  }
+}
+
+.ftr-links-sub {
+  padding: 0;
+  margin: 0;
+}
+
+.ftr-links-sub:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.ftr-links-sub li {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 3px 0;
+  color: #ddd;
+  font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-transform: uppercase;
+  /*width: 150px;*/
+}
+
+.footer-custom a,
+.footer-custom a:link,
+.footer-custom a:visited,
+.ftr-links-sub li .link {
+  text-decoration: none;
+  color: #ddd;
+  padding: 5px 0;
+  display: block;
+}
+
+.footer-custom .footer-legal a {
+  display: inline;
+}
+
+.footer-custom a:hover,
+.footer-custom a:active,
+.ftr-links-sub li .link:hover {
+  text-decoration: underline;
+  color: #707070;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-custom a, .footer-custom a:link, .footer-custom a:visited, .ftr-links-sub li .link {
+    padding: 0;
+  }
+}
+/* BEGIN EMAIL CAPTURE STYLES*/
+
+.footer-email {
+  text-align: center;
+}
+
+#ftrEmailForm {
+  height: 44px;
+}
+
+#ftrEmailForm .error {
+  display: none;
+  color: red;
+  text-align: left;
+}
+
+#ftrEmailForm #ftrEmailInput {
+  background: none repeat scroll 0 0 #FFF;
+  border: 1px solid #D6D6D6;
+  box-sizing: border-box;
+  color: #ddd;
+  float: left;
+  font: normal normal 14px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  padding: 5px;
+  width: 70%;
+  height: 100%;
+}
+
+#ftrEmailForm #ftrEmailInput:hover {
+  border: 1px solid #ddd;
+}
+
+#ftrEmailForm #ftrEmailInput:focus {
+  border: 1px solid #0d6efd;
+  outline: #0d6efd auto 5px;
+}
+
+#ftrEmailForm .button {
+  width: 30%;
+  height: 100%;
+  padding: 5px;
+  float: left;
+  border: 1px solid #DFDFDF;
+  box-sizing: border-box;
+  color: #0d6efd;
+  font: normal bold 18px/1 BebasFamily, BebasNeueRegular, "Bebas Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  background: #FFF;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #e1e1e1));
+  background: -webkit-linear-gradient(top, white 0, #e1e1e1 100%);
+  background: -moz-linear-gradient(top, white 0, #e1e1e1 100%);
+  background: -ms-linear-gradient(top, white 0, #e1e1e1 100%);
+  background: -o-linear-gradient(top, white 0, #e1e1e1 100%);
+  background: linear-gradient(to bottom, white 0, #e1e1e1 100%);
+  cursor: pointer;
+  vertical-align: middle;
+  outline: none;
+}
+
+#ftrEmailForm .button:hover,
+#ftrEmailForm .button:active {
+  background: #0d6efd;
+  color: #FFF;
+  outline: none;
+}
+/* BEGIN SOCIAL STYLES*/
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  padding: 0;
+  display: inline-block;
+  list-style-type: none;
+}
+
+.footer-social ul:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.footer-social li {
+  float: left;
+  margin: 0 15px 0 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-lists {
+    width: 100%;
+  }
+  .footer-email {
+    width: 50%;
+    float: left;
+    text-align: left;
+  }
+  .footer-social {
+    width: 45%;
+    margin-left: 5%;
+    float: left;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1008px) {
+  .footer-lists {
+    width: 66.6666%;
+    float: left;
+  }
+  .footer-email {
+    width: 33.3333%;
+  }
+  .footer-social {
+    width: 33.3333%;
+    float: right;
+    margin-left: 0;
+  }
+}
+
+.footer-legal {
+  padding: 15px 0 0;
+  clear: left;
+}
+
+.footer-payment {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-legal {
+    width: 66.6666%;
+    float: left;
+  }
+  .footer-payment {
+    width: 33.3333%;
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 1008px) {
+  .footer-payment {
+    text-align: left;
+  }
+}
+
+.footer-payment ul {
+  padding: 0;
+  display: inline-block;
+  list-style-type: none;
+}
+
+.footer-payment ul li {
+  display: inline-block;
+  margin: 0 6px;
+}
+
+@media only screen and (min-width: 1008px) {
+  .footer-payment ul li.ftr-stella {
+    margin-left: 0;
+  }
+}
+
+.ftr-bbb span,
+.ftr-stella span {
+  background-image: url("http://cache1.artprintimages.com/images/jump_pages/rebrand2/images/subnav2.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+.ftr-bbb span {
+  background-position: -339px -8px;
+  width: 96px;
+}
+
+.ftr-stella span {
+  background-position: -339px -107px;
+  width: 57px;
+}
+
