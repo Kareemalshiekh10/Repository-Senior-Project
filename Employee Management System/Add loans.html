@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/Add loans.css">
+</head>
+
+<body>
+    <!------------------------------------------------------------------------ sidebar starts------------------------------------------------------------------------ -->
+    <div class="sidebar">
+      <h1 class="logo">Employee Management System</h1>
+      <div class="menu-links">
+          <h2 style="text-align: left; text-decoration: underline;">Menu</h2>
+          <a href="#" class="dropdown-trigger">Employees</a>
+          <div class="dropdown-content">
+              <a href="#">View Employee</a>
+              <a href="#">Add Employee</a>
+              <a href="#">Edit Employee</a>
+              <!-- Add more dropdown links as needed -->
+          </div>
+          <a href="#" class="dropdown-trigger">Department</a>
+          <div class="dropdown-content">
+              <a href="#">View Department</a>
+              <a href="#">Add Department</a>
+              <a href="#">Edit Department</a>
+              <!-- Add more links as needed -->
+          </div>
+          <a href="#" class="dropdown-trigger">Loans</a>
+          <div class="dropdown-content">
+              <a href="#">View Loans</a>
+              <a href="#">Add Loans</a>
+              <!-- Add more dropdown links as needed -->
+          </div>
+          <a href="#" class="dropdown-trigger">Incentives</a>
+          <div class="dropdown-content">
+              <a href="#">View Incentives</a>
+              <a href="#">Add Incentives</a>
+
+              <!-- Add more dropdown links as needed -->
+          </div>
+      </div>
+  </div>
+  <!------------------------------------------------------------------------ sidebar ends------------------------------------------------------------------------ -->
+    <form id="addLoanForm">
+        <h2>Add Loan</h2>
+      
+        <div class="form-group">
+          <label for="loanEmployeeID">Employee ID:</label>
+          <input type="text" id="loanEmployeeID" name="loanEmployeeID" class="form-control" placeholder="Employee ID" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="loanEmployeeName">Employee Name:</label>
+          <input type="text" id="loanEmployeeName" name="loanEmployeeName" class="form-control" placeholder="Employee Name" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="loanAmount">Loan Amount:</label>
+          <input type="text" id="loanAmount" name="loanAmount" class="form-control" placeholder="Loan Amount" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="numberOfMonths">Number of Months:</label>
+          <input type="number" id="numberOfMonths" name="numberOfMonths" class="form-control" placeholder="Number of Months" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="startDate">Start Date:</label>
+          <input type="date" id="startDate" name="startDate" class="form-control" placeholder="Start Date" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="endDate">End Date:</label>
+          <input type="date" id="endDate" name="endDate" class="form-control" placeholder="End Date" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="creatorName">Creator Name:</label>
+          <input type="text" id="creatorName" name="creatorName" class="form-control" placeholder="Creator Name" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="dateOfRegister">Date of Register:</label>
+          <input type="date" id="dateOfRegister" name="dateOfRegister" class="form-control" placeholder="Date of Register" required>
+        </div>
+        
+        <br>
+        <input type="submit" value="Add Loan" class="btn btn-primary">
+      </form>
+      
+</body>
+</html>
