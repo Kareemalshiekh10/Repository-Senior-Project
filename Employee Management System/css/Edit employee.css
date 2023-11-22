@@ -1,5 +1,9 @@
 /* Edit Employee Form CSS */
-        
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+  }    
 .container {
     width: 60%;
     margin-top: 50px;

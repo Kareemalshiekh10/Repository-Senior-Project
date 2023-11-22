@@ -1,19 +1,25 @@
-/* Existing CSS */
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+}
 
 .content {
   padding: 20px;
   margin-top: 80px;
 }
 
+
 form {
   max-width: 500px;
   margin: auto;
+  margin-top: 70px;
   background-color: #fff;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-
 label {
   font-weight: bold;
 }
@@ -64,5 +70,5 @@ input[type="submit"]:hover {
   border-radius: 5px;
   resize: vertical; /* Allows vertical resizing */
   min-height: 100px; /* Set a minimum height */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
