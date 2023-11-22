@@ -19,8 +19,10 @@ body {
 
 h2 {
     margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+    color: #384863
 }
-
 .form-group {
     margin-bottom: 20px;
 }
@@ -35,7 +37,7 @@ input[type="number"],
 input[type="date"],
 input[type="tel"],
 input[type="email"] {
-  width: 100%;
+  width: 98%;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -68,7 +70,7 @@ input[type="submit"]:hover {
     background-color: #546987;
 }
 textarea {
-    width: 100%; /* This ensures the textarea fills the entire width of its container */
+    width: 98%; /* This ensures the textarea fills the entire width of its container */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
