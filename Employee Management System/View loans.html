@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/View loans.css">
+</head>
+
+<body>
+    <!------------------------------------------------------------------------ sidebar starts------------------------------------------------------------------------ -->
+    <div class="sidebar">
+        <h1 class="logo">Employee Management System</h1>
+        <div class="menu-links">
+            <h2 style="text-align: left; text-decoration: underline;">Menu</h2>
+            <a href="#" class="dropdown-trigger">Employees</a>
+            <div class="dropdown-content">
+                <a href="#">View Employee</a>
+                <a href="#">Add Employee</a>
+                <a href="#">Edit Employee</a>
+                <!-- Add more dropdown links as needed -->
+            </div>
+            <a href="#" class="dropdown-trigger">Department</a>
+            <div class="dropdown-content">
+                <a href="#">View Department</a>
+                <a href="#">Add Department</a>
+                <a href="#">Edit Department</a>
+                <!-- Add more links as needed -->
+            </div>
+            <a href="#" class="dropdown-trigger">Loans</a>
+            <div class="dropdown-content">
+                <a href="#">View Loans</a>
+                <a href="#">Add Loans</a>
+                <!-- Add more dropdown links as needed -->
+            </div>
+            <a href="#" class="dropdown-trigger">Incentives</a>
+            <div class="dropdown-content">
+                <a href="#">View Incentives</a>
+                <a href="#">Add Incentives</a>
+
+                <!-- Add more dropdown links as needed -->
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------ sidebar ends------------------------------------------------------------------------ -->
+    <div class="content">
+
+        <section>
+            <h2>Loans Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Employee ID</th>
+                        <th>Employee Name</th>
+                        <th>Loan Amount</th>
+                        <th>Number of Months</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Creator Name</th>
+                        <th>Date of Register</th>
+                        <th>Status</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <tr data-id="1">
+                        <td>1</td>
+                        <td>EMP001</td>
+                        <td>John Doe</td>
+                        <td>$5000</td>
+                        <td>12</td>
+                        <td>2023-01-01</td>
+                        <td>2023-12-31</td>
+                        <td>Admin</td>
+                        <td>2023-01-05</td>
+                        <td><input type="checkbox" name="status"></td> 
+                    </tr>
+                    </tr>
+                    <tr>
+                    <tr data-id="2">
+                        <td>2</td>
+                        <td>EMP002</td>
+                        <td>Jane Smith</td>
+                        <td>$3000</td>
+                        <td>6</td>
+                        <td>2023-02-15</td>
+                        <td>2023-06-30</td>
+                        <td>Manager</td>
+                        <td>2023-02-20</td>
+                        <td><input type="checkbox" name="status"></td>
+                    </tr>
+                    </tr>
+                    <tr>
+                    <tr data-id="3">
+                        <td>3</td>
+                        <td>EMP003</td>
+                        <td>Alice Johnson</td>
+                        <td>$7000</td>
+                        <td>24</td>
+                        <td>2023-03-10</td>
+                        <td>2025-03-10</td>
+                        <td>Supervisor</td>
+                        <td>2023-03-15</td>
+                        <td><input type="checkbox" name="status"></td> 
+                    </tr>
+                    </tr>
+                    <tr>
+                    <tr data-id="4">
+                        <td>4</td>
+                        <td>EMP004</td>
+                        <td>David Brown</td>
+                        <td>$4500</td>
+                        <td>8</td>
+                        <td>2023-04-20</td>
+                        <td>2023-12-20</td>
+                        <td>Team Lead</td>
+                        <td>2023-04-25</td>
+                        <td><input type="checkbox" name="status"></td> 
+                    </tr>
+                    </tr>
+                    <tr>
+                    <tr data-id="5">
+                        <td>5</td>
+                        <td>EMP005</td>
+                        <td>Sarah Miller</td>
+                        <td>$6000</td>
+                        <td>18</td>
+                        <td>2023-05-05</td>
+                        <td>2024-11-05</td>
+                        <td>Manager</td>
+                        <td>2023-05-10</td>
+                        <td><input type="checkbox" name="status"></td> 
+                    </tr>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+</body>
+
+</html>
