@@ -75,8 +75,12 @@
                         <td>Office A</td>
                         <td>25</td>
                         <td>2023-01-01</td>
-                        <td><button onclick="deleteDepartment(1)">Delete</button> <button
-                                onclick="editDepartment(1)">Edit</button></td>
+                        <td>
+                            <button onclick="deleteDepartment(1)">Delete</button>
+                            <button onclick="editDepartment(1)">Edit</button>
+                            <button onclick="viewEmployees(1)">View</button> 
+                        </td>
+
                     </tr>
                     </tr>
                     <tr>
@@ -88,8 +92,11 @@
                         <td>Office B</td>
                         <td>18</td>
                         <td>2023-02-15</td>
-                        <td><button onclick="deleteDepartment(2)">Delete</button> <button
-                                onclick="editDepartment(2)">Edit</button></td>
+                        <td>
+                            <button onclick="deleteDepartment(2)">Delete</button>
+                            <button onclick="editDepartment(2)">Edit</button>
+                            <button onclick="viewEmployees(2)">View</button> 
+                        </td>
                     </tr>
                     </tr>
                     <tr>
@@ -101,8 +108,11 @@
                         <td>Office C</td>
                         <td>30</td>
                         <td>2023-03-20</td>
-                        <td><button onclick="deleteDepartment(3)">Delete</button> <button
-                                onclick="editDepartment(3)">Edit</button></td>
+                        <td>
+                            <button onclick="deleteDepartment(3)">Delete</button>
+                            <button onclick="editDepartment(3)">Edit</button>
+                            <button onclick="viewEmployees(3)">View</button> 
+                        </td>
                     </tr>
                     </tr>
                     <!-- Add more rows as needed -->
@@ -111,7 +121,6 @@
         </section>
         <!-- Add a section to display employees -->
         <section id="employeeList">
-            <h2>Employees in Department</h2>
             <ul id="employeeDetails"></ul>
         </section>
 

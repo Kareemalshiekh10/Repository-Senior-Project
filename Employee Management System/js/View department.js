@@ -1,50 +1,59 @@
-function deleteEmployee(employeeId) {
-    // Implement your deletion logic here
-    // For now, let's just remove the row from the table
-    const row = document.querySelector(`tr[data-id="${employeeId}"]`);
+function deleteDepartment(id) {
+    const row = document.querySelector(`tr[data-id="${id}"]`);
     if (row) {
         row.remove();
     }
 }
-function editEmployee(employeeId) {
-    console.log(`Editing employee with ID: ${employeeId}`);
-    // Implement your edit logic here
-    // For example, you might open a modal with a form to edit employee details
-}
-// Assume you have an array of employees with their respective department IDs
-const employees = [
-    { id: 1, name: 'John Doe', departmentId: 1 },
-    { id: 2, name: 'Jane Smith', departmentId: 2 },
-    { id: 2, name: 'Bob Johnson	', departmentId: 3 },
-    // More employee data...
-];
 
-document.addEventListener('DOMContentLoaded', function() {
-    const departmentRows = document.querySelectorAll('tbody tr');
-    const employeeDetails = document.getElementById('employeeDetails');
+// Function to view employees in a department
+function viewEmployees(id) {
+    const departmentRow = document.querySelector(`tr[data-id="${id}"]`);
+    if (departmentRow) {
+        const departmentName = departmentRow.dataset.name;
+        const employeesList = document.getElementById('employeeDetails');
+        // Clear previous employee details
+        employeesList.innerHTML = '';
 
-    departmentRows.forEach(row => {
-        row.addEventListener('click', function() {
-            const departmentId = this.getAttribute('data-id');
-            const departmentName = this.getAttribute('data-name');
-            const employeesInDepartment = employees.filter(employee => employee.departmentId === parseInt(departmentId));
+        const departmentHeading = document.createElement('h3');
+        departmentHeading.textContent = `Employees in ${departmentName}`;
+        employeesList.appendChild(departmentHeading);
 
-            if (employeesInDepartment.length > 0) {
-                displayEmployees(employeesInDepartment, departmentName);
-            } else {
-                employeeDetails.innerHTML = `<li>No employees found in ${departmentName}</li>`;
-            }
+        const employeesData = getEmployeesForDepartment(id);
+
+        employeesData.forEach(employee => {
+            const listItem = document.createElement('li');
+            listItem.textContent = `${employee.name} - ${employee.position}`;
+            employeesList.appendChild(listItem);
         });
-    });
-});
 
-function displayEmployees(employees, departmentName) {
-    const employeeList = document.getElementById('employeeDetails');
-    employeeList.innerHTML = `<h3>Employees in ${departmentName}</h3>`;
-    
-    employees.forEach(employee => {
-        const listItem = document.createElement('li');
-        listItem.textContent = employee.name;
-        employeeList.appendChild(listItem);
-    });
+        console.log(`Viewing employees for department '${departmentName}':`, employeesData);
+    }
+}
+
+// Simulating fetching employees for different departments (replace with actual data)
+function getEmployeesForDepartment(id) {
+    // Add logic to fetch employees based on department ID
+    switch (id) {
+        case 1:
+            return [
+                { name: 'Employee 1', position: 'Developer' },
+                { name: 'Employee 2', position: 'Manager' },
+                // Add specific employees for department 1
+            ];
+        case 2:
+            return [
+                { name: 'Employee 1', position: 'HR Assistant' },
+                { name: 'Employee 2', position: 'Recruiter' },
+             
+            ];
+            case 3:
+                return [
+                    { name: 'Employee 1', position: ' IT ' },
+                    { name: 'Employee 2', position: 'Developer' },
+                  
+                ];
+        // Add more cases for other department IDs as needed
+        default:
+            return [];
+    }
 }
