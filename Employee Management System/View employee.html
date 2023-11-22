@@ -11,102 +11,93 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="sidebar">
-            <header>
-                <h1>EMS</h1>
-            </header>
-            <nav>
-                <a href="#">Home</a>
-                <div class="dropdown">
-                    <a href="#">Employee</a>
-                    <div class="dropdown-content">
-                        <a href="#">View employee</a>
-                        <a href="#">New employee</a>
-                        <a href="#">Edit employee</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="#">Department</a>
-                    <div class="dropdown-content">
-                        <a href="#">View Department</a>
-                        <a href="#">New Department</a>
-                        <a href="#">Edit Department</a>
-                    </div>
-                </div>
-                <a href="#">Performance</a>
-                <!-- Add more navigation links as needed -->
-            </nav>
-        </div>
-        
-        <div class="content">
-            <header>
-                <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
-                <h1>Employee Management System</h1>
-            </header>
-
-            <section>
-                <h2>Employee Table</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Department</th>
-                            <th>Position</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Joining Date</th>
-                            <th>Action</th> <!-- New column for delete buttons -->
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <tr data-id="1">
-                            <td>1</td>
-                            <td>John Doe</td>
-                            <td>IT</td>
-                            <td>Developer</td>
-                            <td>john.doe@example.com</td>
-                            <td>(555) 123-4567</td>
-                            <td>2023-01-01</td>
-                            <td><button onclick="deleteEmployee(1)">Delete</button> <button onclick="editEmployee(1)">Edit</button></td>
-                        </tr>
-                    </tr>
-                        <tr>
-                            <tr data-id="2">
-                            <td>2</td>
-                            <td>Jane Smith</td>
-                            <td>HR</td>
-                            <td>Manager</td>
-                            <td>jane.smith@example.com</td>
-                            <td>(555) 987-6543</td>
-                            <td>2023-02-15</td>
-                            <td><button onclick="deleteEmployee(2)">Delete</button> <button onclick="editEmployee(2)">Edit</button></td>
-                        </tr>
-                    </tr>
-                        <tr>
-                            <tr data-id="3">
-                            <td>3</td>
-                            <td>Bob Johnson</td>
-                            <td>Finance</td>
-                            <td>Accountant</td>
-                            <td>bob.johnson@example.com</td>
-                            <td>(555) 876-5432</td>
-                            <td>2023-03-20</td>
-                            <td><button onclick="deleteEmployee(3)">Delete</button> <button onclick="editEmployee(3)">Edit</button></td>
-                        </tr>
-                    </tr>
-                        <!-- Add more rows as needed -->
-                    </tbody>
-                </table>
-            </section>
+    <!------------------------------------------------------------------------ sidebar starts------------------------------------------------------------------------ -->
+    <div class="sidebar">
+        <h1 class="logo">Employee Management System</h1>
+        <div class="menu-links">
+            <h2>Menu</h2>
+            <a href="#">Dashboard</a>
+            <a href="#" class="dropdown-trigger">Employees</a>
+            <div class="dropdown-content">
+                <a href="#">View employee</a>
+                <a href="#">Add employee</a>
+                <a href="#">Edit employee</a>
+                <!-- Add more dropdown links as needed -->
+            </div>
+            <a href="#" class="dropdown-trigger">Department</a>
+            <div class="dropdown-content">
+                <a href="#">View Department</a>
+                <a href="#">Add Department</a>
+                <a href="#">Edit Department</a>
+                <!-- Add more links as needed -->
+            </div>
         </div>
     </div>
+    <!------------------------------------------------------------------------ sidebar ends------------------------------------------------------------------------ -->
 
-    <footer>
-        <p>&copy; 2023 Employee Management System</p>
-    </footer>
+    <div class="content">
+
+        <section>
+            <h2>Employee Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Position</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Joining Date</th>
+                        <th>Action</th> <!-- New column for delete buttons -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <tr data-id="1">
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>IT</td>
+                        <td>Developer</td>
+                        <td>john.doe@example.com</td>
+                        <td>(555) 123-4567</td>
+                        <td>2023-01-01</td>
+                        <td><button onclick="deleteEmployee(1)">Delete</button> <button
+                                onclick="editEmployee(1)">Edit</button></td>
+                    </tr>
+                    </tr>
+                    <tr>
+                    <tr data-id="2">
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>HR</td>
+                        <td>Manager</td>
+                        <td>jane.smith@example.com</td>
+                        <td>(555) 987-6543</td>
+                        <td>2023-02-15</td>
+                        <td><button onclick="deleteEmployee(2)">Delete</button> <button
+                                onclick="editEmployee(2)">Edit</button></td>
+                    </tr>
+                    </tr>
+                    <tr>
+                    <tr data-id="3">
+                        <td>3</td>
+                        <td>Bob Johnson</td>
+                        <td>Finance</td>
+                        <td>Accountant</td>
+                        <td>bob.johnson@example.com</td>
+                        <td>(555) 876-5432</td>
+                        <td>2023-03-20</td>
+                        <td><button onclick="deleteEmployee(3)">Delete</button> <button
+                                onclick="editEmployee(3)">Edit</button></td>
+                    </tr>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
 
     <script src="./js/View employee.js"></script>
     <script src="./js/sidebar.js"></script>

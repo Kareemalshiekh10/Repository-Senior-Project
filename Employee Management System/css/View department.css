@@ -1,5 +1,8 @@
-
-/* Add any additional styles for your table for better visualization */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+  }
 table {
     width: 100%;
     border-collapse: collapse;

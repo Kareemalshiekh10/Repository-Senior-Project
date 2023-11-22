@@ -11,114 +11,103 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="sidebar">
-            <header>
-                <h1>EMS</h1>
-            </header>
-            <nav>
-                <a href="#">Home</a>
-                <div class="dropdown">
-                    <a href="#">Employee</a>
-                    <div class="dropdown-content">
-                        <a href="#">View employee</a>
-                        <a href="#">New employee</a>
-                        <a href="#">Edit employee</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="#">Department</a>
-                    <div class="dropdown-content">
-                        <a href="#">View Department</a>
-                        <a href="#">New Department</a>
-                        <a href="#">Edit Department</a>
-                    </div>
-                </div>
-                <a href="#">Performance</a>
-                <!-- Add more navigation links as needed -->
-            </nav>
-        </div>
-
-        <div class="content">
-            <header>
-                <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
-                <h1>Employee Management System</h1>
-            </header>
-
-            <section>
-                <h2>Department Table</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Head</th>
-                            <th>Location</th> <!-- New column: Location -->
-                            <th>Employees Count</th> <!-- New column: Employees Count -->
-                            <th>Created At</th> <!-- New column: Created At -->
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <tr data-id="1" data-name="IT">
-                            <td>1</td>
-                            <td>IT</td>
-                            <td>Information Technology</td>
-                            <td>John Doe</td>
-                            <td>Office A</td>
-                            <td>25</td>
-                            <td>2023-01-01</td>
-                            <td><button onclick="deleteDepartment(1)">Delete</button> <button
-                                    onclick="editDepartment(1)">Edit</button></td>
-                        </tr>
-                        </tr>
-                        <tr>
-                        <tr data-id="2" data-name="HR">
-                            <td>2</td>
-                            <td>HR</td>
-                            <td>Human Resources</td>
-                            <td>Jane Smith</td>
-                            <td>Office B</td>
-                            <td>18</td>
-                            <td>2023-02-15</td>
-                            <td><button onclick="deleteDepartment(2)">Delete</button> <button
-                                    onclick="editDepartment(2)">Edit</button></td>
-                        </tr>
-                        </tr>
-                        <tr>
-                        <tr data-id="3" data-name="Finance">
-                            <td>3</td>
-                            <td>Finance</td>
-                            <td>Finance Department</td>
-                            <td>Bob Johnson</td>
-                            <td>Office C</td>
-                            <td>30</td>
-                            <td>2023-03-20</td>
-                            <td><button onclick="deleteDepartment(3)">Delete</button> <button
-                                    onclick="editDepartment(3)">Edit</button></td>
-                        </tr>
-                        </tr>
-                        <!-- Add more rows as needed -->
-                    </tbody>
-                </table>
-            </section>
-            <!-- Add a section to display employees -->
-            <section id="employeeList">
-                <h2>Employees in Department</h2>
-                <ul id="employeeDetails"></ul>
-            </section>
-
+    <!------------------------------------------------------------------------ sidebar starts------------------------------------------------------------------------ -->
+    <div class="sidebar">
+        <h1 class="logo">Employee Management System</h1>
+        <div class="menu-links">
+            <h2>Menu</h2>
+            <a href="#">Dashboard</a>
+            <a href="#" class="dropdown-trigger">Employees</a>
+            <div class="dropdown-content">
+                <a href="#">View employee</a>
+                <a href="#">Add employee</a>
+                <a href="#">Edit employee</a>
+                <!-- Add more dropdown links as needed -->
+            </div>
+            <a href="#" class="dropdown-trigger">Department</a>
+            <div class="dropdown-content">
+                <a href="#">View Department</a>
+                <a href="#">Add Department</a>
+                <a href="#">Edit Department</a>
+                <!-- Add more links as needed -->
+            </div>
         </div>
     </div>
+    <!------------------------------------------------------------------------ sidebar ends------------------------------------------------------------------------ -->
 
-    <footer>
-        <p>&copy; 2023 Employee Management System</p>
-    </footer>
+    <div class="content">
+
+
+        <section>
+            <h2>Department Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Head</th>
+                        <th>Location</th> <!-- New column: Location -->
+                        <th>Employees Count</th> <!-- New column: Employees Count -->
+                        <th>Created At</th> <!-- New column: Created At -->
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <tr data-id="1" data-name="IT">
+                        <td>1</td>
+                        <td>IT</td>
+                        <td>Information Technology</td>
+                        <td>John Doe</td>
+                        <td>Office A</td>
+                        <td>25</td>
+                        <td>2023-01-01</td>
+                        <td><button onclick="deleteDepartment(1)">Delete</button> <button
+                                onclick="editDepartment(1)">Edit</button></td>
+                    </tr>
+                    </tr>
+                    <tr>
+                    <tr data-id="2" data-name="HR">
+                        <td>2</td>
+                        <td>HR</td>
+                        <td>Human Resources</td>
+                        <td>Jane Smith</td>
+                        <td>Office B</td>
+                        <td>18</td>
+                        <td>2023-02-15</td>
+                        <td><button onclick="deleteDepartment(2)">Delete</button> <button
+                                onclick="editDepartment(2)">Edit</button></td>
+                    </tr>
+                    </tr>
+                    <tr>
+                    <tr data-id="3" data-name="Finance">
+                        <td>3</td>
+                        <td>Finance</td>
+                        <td>Finance Department</td>
+                        <td>Bob Johnson</td>
+                        <td>Office C</td>
+                        <td>30</td>
+                        <td>2023-03-20</td>
+                        <td><button onclick="deleteDepartment(3)">Delete</button> <button
+                                onclick="editDepartment(3)">Edit</button></td>
+                    </tr>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+        <!-- Add a section to display employees -->
+        <section id="employeeList">
+            <h2>Employees in Department</h2>
+            <ul id="employeeDetails"></ul>
+        </section>
+
+
+    </div>
 
     <script src="./js/View department.js"></script>
-    <script src="./js/sidebar.js"></script>
+
 </body>
 
 </html>
