@@ -22,7 +22,7 @@ function viewEmployees(id) {
 
         employeesData.forEach(employee => {
             const listItem = document.createElement('li');
-            listItem.textContent = `${employee.name} - ${employee.position}`;
+            listItem.textContent = `${employee.name} - ${employee.employeename}`;
             employeesList.appendChild(listItem);
         });
 
@@ -36,20 +36,21 @@ function getEmployeesForDepartment(id) {
     switch (id) {
         case 1:
             return [
-                { name: 'Employee 1', position: 'Developer' },
-                { name: 'Employee 2', position: 'Manager' },
+                { name: 'Employee 1', employeename: 'John' },
+                { name: 'Employee 2', employeename: 'Samy' },
+                { name: 'Employee 3', employeename: 'Samy' },
                 // Add specific employees for department 1
             ];
         case 2:
             return [
-                { name: 'Employee 1', position: 'HR Assistant' },
-                { name: 'Employee 2', position: 'Recruiter' },
+                { name: 'Employee 1', employeename: 'Many' },
+                { name: 'Employee 2', employeename: 'Johny mod' },
              
             ];
             case 3:
                 return [
-                    { name: 'Employee 1', position: ' IT ' },
-                    { name: 'Employee 2', position: 'Developer' },
+                    { name: 'Employee 1', employeename: ' Mohamed ' },
+                    { name: 'Employee 2', employeename: 'Kareem' },
                   
                 ];
         // Add more cases for other department IDs as needed
