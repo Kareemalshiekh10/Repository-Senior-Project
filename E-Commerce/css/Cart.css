@@ -9,10 +9,10 @@
     scroll-behavior: smooth;;
 }
 body{
-    background-color: #ddd !important;
+    background-color: #fff !important;
 }
 .cart{
-    background-color: #ddd !important;
+    background-color: #fff !important;
 }
 .bg-light-gray{    
     background-color: rgb(241, 240, 240);
@@ -31,7 +31,7 @@ body{
     list-style: none;
 }
 .bg_cart_1{
-    background-color: #ddd;
+    background-color: #e9e9e9;
     background-image: #fff;
 }
 .list-group-item{
