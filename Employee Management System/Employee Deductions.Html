@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Management System</title>
+  <link rel="stylesheet" href="./css/Employee Deductions.css">
+</head>
+
+<body>
+  <!------------------------------------------------------------------------ sidebar starts------------------------------------------------------------------------ -->
+  <div class="sidebar">
+    <h1 class="logo">Employee Management System</h1>
+    <div class="menu-links">
+      <h2 style="text-align: left; text-decoration: underline;">Menu</h2>
+      <a href="#" class="dropdown-trigger">Employees</a>
+      <div class="dropdown-content">
+        <a href="./View employee.html">View Employee</a>
+        <a href="./Add employee.html">Add Employee</a>
+        <a href="./Edit employee.html">Edit Employee</a>
+        <!-- Add more dropdown links as needed -->
+      </div>
+      <a href="#" class="dropdown-trigger">Department</a>
+      <div class="dropdown-content">
+        <a href="./View department.html">View Department</a>
+        <a href="./Add department.html">Add Department</a>
+        <a href="./Edit department.html">Edit Department</a>
+        <!-- Add more links as needed -->
+      </div>
+      <a href="#" class="dropdown-trigger">Loans</a>
+      <div class="dropdown-content">
+        <a href="./View loans.html">View Loans</a>
+        <a href="./Add loans.html">Add Loans</a>
+        <!-- Add more dropdown links as needed -->
+      </div>
+      <a href="#" class="dropdown-trigger">Incentives</a>
+      <div class="dropdown-content">
+        <a href="./View Incentives.html">View Incentives</a>
+        <a href="./Add incentives.html">Add Incentives</a>
+
+        <!-- Add more dropdown links as needed -->
+      </div>
+    </div>
+  </div>
+  <!------------------------------------------------------------------------ sidebar ends------------------------------------------------------------------------- -->
+
+<!--------------------------------------------------------------------------Employee Deductions------------------------------------------------------------------------>
+  <div class="content">
+
+    <section>
+        <h2>Employee Deductions Table</h2>
+        <button onclick="addDeductions()">Add Deductions</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Position</th>
+                    <th>Salary</th>
+                    <th>Deductions</th>
+                    <th>Salary After Dedections</th>
+                    <th>Action</th> <!-- New column for delete buttons -->
+                </tr>
+            </thead>
+            <tbody id="deductionsTableBody">
+                <tr>
+                <tr data-id="1">
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>IT</td>
+                    <td>Developer</td>
+                    <td>5000$</td>
+                    <td>1000$</td>
+                    <td>4000$</td>
+                    <td><button onclick="deleteEmployee(1)">Delete</button> <button
+                            onclick="editEmployee(1)">Edit</button></td>
+                </tr>
+                </tr>
+                <tr>
+                <tr data-id="2">
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                    <td>HR</td>
+                    <td>Manager</td>
+                    <td>5000$</td>
+                    <td>1000$</td>
+                    <td>4000$</td>
+                    <td><button onclick="deleteEmployee(2)">Delete</button> <button
+                            onclick="editEmployee(2)">Edit</button></td>
+                </tr>
+                </tr>
+                <tr>
+                <tr data-id="3">
+                    <td>3</td>
+                    <td>Bob Johnson</td>
+                    <td>Finance</td>
+                    <td>Accountant</td>
+                    <td>5000$</td>
+                    <td>1000$</td>
+                    <td>4000$</td>
+                    <td><button onclick="deleteEmployee(3)">Delete</button> <button
+                            onclick="editEmployee(3)">Edit</button></td>
+                </tr>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
+</div>
+
+
+<script src="./js/Employee Deductions.js"></script>
+</body>
+
+</html>
