@@ -50,7 +50,7 @@
     <section>
         <h2>Employee Deductions Table</h2>
         <button onclick="addDeductions()">Add Deductions</button>
-        <table>
+        <table id="salaryTable">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -70,9 +70,9 @@
                     <td>John Doe</td>
                     <td>IT</td>
                     <td>Developer</td>
-                    <td>5000$</td>
-                    <td>1000$</td>
-                    <td>4000$</td>
+                    <td  class="salaryValue">3000$</td>
+                    <td  class="deductionValue">1000$</td>
+                    <td  class="afterDeductionValue"></td>
                     <td><button onclick="deleteEmployee(1)">Delete</button> <button
                             onclick="editEmployee(1)">Edit</button></td>
                 </tr>
@@ -83,9 +83,9 @@
                     <td>Jane Smith</td>
                     <td>HR</td>
                     <td>Manager</td>
-                    <td>5000$</td>
-                    <td>1000$</td>
-                    <td>4000$</td>
+                    <td class="salaryValue">5000$</td>
+                    <td class="deductionValue">1000$</td>
+                    <td class="afterDeductionValue"></td>
                     <td><button onclick="deleteEmployee(2)">Delete</button> <button
                             onclick="editEmployee(2)">Edit</button></td>
                 </tr>
@@ -96,9 +96,9 @@
                     <td>Bob Johnson</td>
                     <td>Finance</td>
                     <td>Accountant</td>
-                    <td>5000$</td>
-                    <td>1000$</td>
-                    <td>4000$</td>
+                    <td class="salaryValue">2000$</td>
+                    <td class="deductionValue">1000$</td>
+                    <td class="afterDeductionValue"></td>
                     <td><button onclick="deleteEmployee(3)">Delete</button> <button
                             onclick="editEmployee(3)">Edit</button></td>
                 </tr>
@@ -109,8 +109,42 @@
     </section>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
 
 <script src="./js/Employee Deductions.js"></script>
+
+<script>
+$(document).ready(function() {
+  // Function to calculate after deduction on page load
+  calculateAfterDeduction();
+
+  // Function to calculate after deduction for each row on page load
+  function calculateAfterDeduction() {
+
+    $('#salaryTable tbody tr').each(function() {
+      calculateAfterDeductionForRow($(this));
+    });
+  }
+
+  // Function to calculate after deduction for a specific row
+  function calculateAfterDeductionForRow(row) {
+    var salaryText = row.find('.salaryValue').text().replace('$', ''); // Remove dollar sign
+    var deductionText = row.find('.deductionValue').text().replace('$', ''); // Remove dollar sign
+
+    var salary = salaryText;
+    var deduction = deductionText;
+    
+    var afterDeduction = salary - deduction;
+    row.find('.afterDeductionValue').text(afterDeduction+"$");
+  }
+
+});
+
+</script>
+
+
 </body>
 
 </html>
