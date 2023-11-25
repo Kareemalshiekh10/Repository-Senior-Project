@@ -25,7 +25,7 @@ function editEmployee(id) {
 // Function to save the edited information
 function saveEmployee(id) {
     const row = document.querySelector(`tr[data-id="${id}"]`);
-    const cells = row.querySelectorAll('td');
+    const cells = row.querySelectorAll('td:not(:last-child)'); // Select all td except the last one
 
     cells.forEach(cell => {
         const newValue = cell.querySelector('input').value;
@@ -33,9 +33,8 @@ function saveEmployee(id) {
     });
 
     const actionCell = row.querySelector('td:last-child');
-    actionCell.innerHTML = `<button onclick="editEmployee(${id})">Edit</button>
-                            <button onclick="saveEditedEmployee(${id})">Save</button>
-                            <button onclick="deleteEmployee(${id})">Delete</button>`;
+    actionCell.innerHTML = `<button onclick="deleteEmployee(${id})">Delete</button>
+                            <button onclick="editEmployee(${id})">Edit</button>`;
 }
 
 // Function to save the edited information after re-editing
