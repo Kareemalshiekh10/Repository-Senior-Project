@@ -44,9 +44,6 @@ function saveEditedEmployee(id) {
     editEmployee(id); // Re-enable editing mode by calling the editEmployee function
 }
 
-
-
-
 function addDeductions(ID, Name, Department, Position, Salary, Deductions, SalaryAfterDeductions) {
     var tbody = document.getElementById('deductionsTableBody');
 
@@ -105,4 +102,8 @@ function addDeductions(ID, Name, Department, Position, Salary, Deductions, Salar
     newRow.appendChild(deductionsCell);
     newRow.appendChild(salaryAfterDeductionsCell);
     newRow.appendChild(actionCell);
+
+    // Append the new row to the table body
+    tbody.appendChild(newRow);
 }
+
