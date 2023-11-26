@@ -10,8 +10,30 @@
   top: 0;
   left: 0;
   background-color: #28304B;
-  color: #fff;
   overflow-y: auto;
+  padding-top: 20px;
+}
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 100px; /* Adjust this based on your design */
+  height: 100px; /* Adjust this based on your design */
+  /* Other styles for positioning, border, etc. */
+}
+
+.user-name {
+  color: #fff;
+  margin-top: 10px; /* Adjust spacing */
+  /* Other styles for font, etc. */
 }
 
 .logo {
@@ -24,31 +46,34 @@
 
 /* Menu links */
 
-/* .menu-links {
+.menu-links {
   padding: 20px 0;
-} */
+}
 
 .menu-links h2 {
   font-size: 1.2rem;
   margin-bottom: 10px;
   padding-left: 20px;
-  color: #ccc;
+  color: #fff;
 }
 
 .menu-links a {
   display: block;
   padding: 8px 0;
   text-decoration: none;
-  color: #ccc;
+  color: #fff;
   transition: color 0.3s;
   padding-left: 20px;
   font-size: 16px;
 }
 
 .menu-links a:hover {
-  color: #fff;
+  color: #7f93d6;
 }
+.dropdown-content a:hover{
+  color: #fff;
 
+}
 /* Content styles */
 .content {
   margin-left: 250px;
@@ -86,7 +111,6 @@
 }
 
 .menu-links {
-  /* ... (previous styles) */
   position: relative;
 }
 
@@ -96,7 +120,7 @@
 }
 
 .dropdown-content a {
-  color: #ccc;
+  color: #fff;
   padding: 8px 16px;
   text-decoration: none;
   display: block;
