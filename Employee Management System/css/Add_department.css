@@ -10,10 +10,14 @@ body {
   margin-top: 80px;
 }
 
-h2{
+h2 {
   text-align: center;
-  text-decoration: underline;
   color: #384863;
+  font-size: 24px;
+  padding: 10px 0;
+  border-bottom: 2px solid #384863;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 form {
   max-width: 500px;
