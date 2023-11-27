@@ -3,7 +3,16 @@ body {
     font-family: Arial, sans-serif;
     background-color: #cecece;
     margin: 0;
-  }
+}
+.container {
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 270px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 table {
     width: 100%;
     border-collapse: collapse;
@@ -20,6 +29,7 @@ h2{
     text-decoration: underline;
     color: #384863;
 }
+
 th {
     background-color: #384863;
     color: #fff;
