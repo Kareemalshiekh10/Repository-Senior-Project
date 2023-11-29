@@ -2,120 +2,115 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Management System</title>
-    <link rel="stylesheet" href="./css/Sidebar.css">
-    <link rel="stylesheet" href="./css/View_employee.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management System</title>
+  <link rel="stylesheet" href="./css/Sidebar.css">
+  <link rel="stylesheet" href="./css/View_employee.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
- <!------------------------------------------------------------------------ sidebar starts------------------------------------------------------------------------ -->
- <div class="sidebar">
-  <div class="user-profile">
-    <div class="centered">
-      <img src="./img/download.png" alt="User's Profile Picture" class="profile-picture">
-      <p class="user-name">Employee's Name</p>
+  <!------------------------------------------------------------------------ sidebar starts------------------------------------------------------------------------ -->
+  <div class="sidebar">
+    <div class="user-profile">
+      <div class="centered">
+        <img src="./img/download.png" alt="User's Profile Picture" class="profile-picture">
+        <p class="user-name">Employee's Name</p>
+      </div>
+    </div>
+    <div class="menu-links">
+      <a href="#" class="dropdown-trigger">Employees</a>
+      <div class="dropdown-content">
+        <a href="./View_employee.html">View Employee</a>
+        <a href="./Add_employee.html">Add Employee</a>
+        <a href="./Edit_employee.html">Edit Employee</a>
+        <!-- Add more dropdown links as needed -->
+      </div>
+      <a href="#" class="dropdown-trigger">Department</a>
+      <div class="dropdown-content">
+        <a href="./View_department.html">View Department</a>
+        <a href="./Add_department.html">Add Department</a>
+        <a href="./Edit_department.html">Edit Department</a>
+        <!-- Add more links as needed -->
+      </div>
+      <a href="#" class="dropdown-trigger">Loans</a>
+      <div class="dropdown-content">
+        <a href="./View_loans.html">View Loans</a>
+        <a href="./Add_loans.html">Add Loans</a>
+        <!-- Add more dropdown links as needed -->
+      </div>
+      <a href="#" class="dropdown-trigger">Incentives</a>
+      <div class="dropdown-content">
+        <a href="./View_Incentives.html">View Incentives</a>
+        <a href="./Add_incentives.html">Add Incentives</a>
+
+        <!-- Add more dropdown links as needed -->
+      </div>
     </div>
   </div>
-  <div class="menu-links">
-    <a href="#" class="dropdown-trigger">Employees</a>
-    <div class="dropdown-content">
-      <a href="./View_employee.html">View Employee</a>
-      <a href="./Add_employee.html">Add Employee</a>
-      <a href="./Edit_employee.html">Edit Employee</a>
-      <!-- Add more dropdown links as needed -->
-    </div>
-    <a href="#" class="dropdown-trigger">Department</a>
-    <div class="dropdown-content">
-      <a href="./View_department.html">View Department</a>
-      <a href="./Add_department.html">Add Department</a>
-      <a href="./Edit_department.html">Edit Department</a>
-      <!-- Add more links as needed -->
-    </div>
-    <a href="#" class="dropdown-trigger">Loans</a>
-    <div class="dropdown-content">
-      <a href="./View_loans.html">View Loans</a>
-      <a href="./Add_loans.html">Add Loans</a>
-      <!-- Add more dropdown links as needed -->
-    </div>
-    <a href="#" class="dropdown-trigger">Incentives</a>
-    <div class="dropdown-content">
-      <a href="./View_Incentives.html">View Incentives</a>
-      <a href="./Add_incentives.html">Add Incentives</a>
+  <!------------------------------------------------------------------------ sidebar ends------------------------------------------------------------------------ -->
+  <section>
+    <div class="container">
+      <h2>Employee Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Position</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Joining Date</th>
+            <th>Action</th> <!-- New column for delete buttons -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <tr data-id="1">
+            <td>1</td>
+            <td>John Doe</td>
+            <td>IT</td>
+            <td>Developer</td>
+            <td>john.doe@example.com</td>
+            <td>(555) 123-4567</td>
+            <td>2023-01-01</td>
+            <td><button onclick="deleteEmployee(1)">Delete</button> <button onclick="editEmployee(1)">Edit</button></td>
+          </tr>
+          </tr>
+          <tr>
+          <tr data-id="2">
+            <td>2</td>
+            <td>Jane Smith</td>
+            <td>HR</td>
+            <td>Manager</td>
+            <td>jane.smith@example.com</td>
+            <td>(555) 987-6543</td>
+            <td>2023-02-15</td>
+            <td><button onclick="deleteEmployee(2)">Delete</button> <button onclick="editEmployee(2)">Edit</button></td>
+          </tr>
+          </tr>
+          <tr>
+          <tr data-id="3">
+            <td>3</td>
+            <td>Bob Johnson</td>
+            <td>Finance</td>
+            <td>Accountant</td>
+            <td>bob.johnson@example.com</td>
+            <td>(555) 876-5432</td>
+            <td>2023-03-20</td>
+            <td><button onclick="deleteEmployee(3)">Delete</button> <button onclick="editEmployee(3)">Edit</button></td>
+          </tr>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
 
-      <!-- Add more dropdown links as needed -->
     </div>
-  </div>
-</div>
-<!------------------------------------------------------------------------ sidebar ends------------------------------------------------------------------------ -->
+  </section>
 
-  <div class="container">
-
-        <section>
-            <h2>Employee Table</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Department</th>
-                        <th>Position</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                        <th>Joining Date</th>
-                        <th>Action</th> <!-- New column for delete buttons -->
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <tr data-id="1">
-                        <td>1</td>
-                        <td>John Doe</td>
-                        <td>IT</td>
-                        <td>Developer</td>
-                        <td>john.doe@example.com</td>
-                        <td>(555) 123-4567</td>
-                        <td>2023-01-01</td>
-                        <td><button onclick="deleteEmployee(1)">Delete</button> <button
-                                onclick="editEmployee(1)">Edit</button></td>
-                    </tr>
-                    </tr>
-                    <tr>
-                    <tr data-id="2">
-                        <td>2</td>
-                        <td>Jane Smith</td>
-                        <td>HR</td>
-                        <td>Manager</td>
-                        <td>jane.smith@example.com</td>
-                        <td>(555) 987-6543</td>
-                        <td>2023-02-15</td>
-                        <td><button onclick="deleteEmployee(2)">Delete</button> <button
-                                onclick="editEmployee(2)">Edit</button></td>
-                    </tr>
-                    </tr>
-                    <tr>
-                    <tr data-id="3">
-                        <td>3</td>
-                        <td>Bob Johnson</td>
-                        <td>Finance</td>
-                        <td>Accountant</td>
-                        <td>bob.johnson@example.com</td>
-                        <td>(555) 876-5432</td>
-                        <td>2023-03-20</td>
-                        <td><button onclick="deleteEmployee(3)">Delete</button> <button
-                                onclick="editEmployee(3)">Edit</button></td>
-                    </tr>
-                    </tr>
-                    <!-- Add more rows as needed -->
-                </tbody>
-            </table>
-        </section>
-    </div>
-
-
-    <script src="./js/View employee.js"></script>
+  <script src="./js/View employee.js"></script>
 </body>
 
 </html>
