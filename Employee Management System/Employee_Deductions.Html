@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Employee Management System</title>
-  <link rel="stylesheet" href="./css/Employee_Deductions.css">
   
+  <link rel="stylesheet" href="./css/Employee_Deductions.css">
+
   <link rel="stylesheet" href="./css/Sidebar.css">
 </head>
 
@@ -26,6 +27,9 @@
         <a href="./Edit_employee.html">Edit Employee</a>
         <!-- Add more dropdown links as needed -->
       </div>
+      <a href="Employee_Deductions.Html" >Deductions</a>
+      
+
       <a href="#" class="dropdown-trigger">Department</a>
       <div class="dropdown-content">
         <a href="./View_department.html">View Department</a>
@@ -46,16 +50,25 @@
 
         <!-- Add more dropdown links as needed -->
       </div>
+      <a href="Branches.html" class="dropdown-trigger">Branches</a>
+      <div class="dropdown-content">
+        
+        <a href="#">Add Branches</a>
+        <a href="#">Edit Branches</a>
+        <!-- Add more links as needed -->
+      </div>
+      
     </div>
   </div>
   <!------------------------------------------------------------------------ sidebar ends------------------------------------------------------------------------ -->
 
 <!--------------------------------------------------------------------------Employee Deductions------------------------------------------------------------------------>
-  <div class="content">
+  
 
     <section>
+      <div class="container">
         <h2>Employee Deductions Table</h2>
-        <button onclick="addDeductions()">Add Deductions</button>
+        <button  onclick="addDeductions()">Add Deductions</button>
         <table id="salaryTable">
             <thead>
                 <tr>
@@ -80,7 +93,7 @@
                     <td  class="deductionValue">1000$</td>
                     <td  class="afterDeductionValue"></td>
                     <td><button onclick="deleteEmployee(1)">Delete</button> <button
-                            onclick="editEmployee(1)">Edit</button></td>
+                      onclick="editEmployee(1)">Edit</button></td>
                 </tr>
                 </tr>
                 <tr>
@@ -93,7 +106,7 @@
                     <td class="deductionValue">1000$</td>
                     <td class="afterDeductionValue"></td>
                     <td><button onclick="deleteEmployee(2)">Delete</button> <button
-                            onclick="editEmployee(2)">Edit</button></td>
+                      onclick="editEmployee(2)">Edit</button></td>
                 </tr>
                 </tr>
                 <tr>
@@ -105,15 +118,17 @@
                     <td class="salaryValue">2000$</td>
                     <td class="deductionValue">1000$</td>
                     <td class="afterDeductionValue"></td>
-                    <td><button onclick="deleteEmployee(3)">Delete</button> <button
-                            onclick="editEmployee(3)">Edit</button></td>
+                    
+                      <td><button onclick="deleteEmployee(3)">Delete</button> <button
+                        onclick="editEmployee(3)">Edit</button></td>
                 </tr>
                 </tr>
                 <!-- Add more rows as needed -->
             </tbody>
         </table>
+      </div>
     </section>
-</div>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
