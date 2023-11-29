@@ -7,6 +7,7 @@
   <title>Employee Management System</title>
   <link rel="stylesheet" href="./css/Sidebar.css">
   <link rel="stylesheet" href="./css/View_department.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
@@ -67,7 +68,6 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
           <tr data-id="1" data-name="IT">
             <td>1</td>
             <td>IT</td>
@@ -77,14 +77,19 @@
             <td>25</td>
             <td>2023-01-01</td>
             <td>
-              <button onclick="deleteDepartment(1)">Delete</button>
-              <a href="./Edit employee.html"><button onclick="editDepartment(1)">Edit</button></a>
-              <button onclick="viewEmployees(1)">View</button>
+              <button onclick="deleteDepartment(1)">
+                <i class="fas fa-trash-alt"></i> <!-- Delete icon -->
+              </button>
+              <a href="./Edit department.html">
+                <button onclick="editDepartment(1)">
+                  <i class="fas fa-edit"></i> <!-- Edit icon -->
+                </button>
+              </a>
+              <button onclick="viewEmployees(1)">
+                <i class="fas fa-eye"></i> <!-- View icon -->
+              </button>
             </td>
-
           </tr>
-          </tr>
-          <tr>
           <tr data-id="2" data-name="HR">
             <td>2</td>
             <td>HR</td>
@@ -94,13 +99,19 @@
             <td>18</td>
             <td>2023-02-15</td>
             <td>
-              <button onclick="deleteDepartment(2)">Delete</button>
-              <a href="./Edit employee.html"><button onclick="editDepartment(2)">Edit</button></a>
-              <button onclick="viewEmployees(2)">View</button>
+              <button onclick="deleteDepartment(2)">
+                <i class="fas fa-trash-alt"></i> <!-- Delete icon -->
+              </button>
+              <a href="./Edit department.html">
+                <button onclick="editDepartment(2)">
+                  <i class="fas fa-edit"></i> <!-- Edit icon -->
+                </button>
+              </a>
+              <button onclick="viewEmployees(2)">
+                <i class="fas fa-eye"></i> <!-- View icon -->
+              </button>
             </td>
           </tr>
-          </tr>
-          <tr>
           <tr data-id="3" data-name="Finance">
             <td>3</td>
             <td>Finance</td>
@@ -110,16 +121,23 @@
             <td>30</td>
             <td>2023-03-20</td>
             <td>
-              <button onclick="deleteDepartment(3)">Delete</button>
-              <a href="./Edit employee.html"><button onclick="editDepartment(3)">Edit</button></a>
-              <button onclick="viewEmployees(3)">View</button>
+              <button onclick="deleteDepartment(3)">
+                <i class="fas fa-trash-alt"></i> <!-- Delete icon -->
+              </button>
+              <a href="./Edit department.html">
+                <button onclick="editDepartment(3)">
+                  <i class="fas fa-edit"></i> <!-- Edit icon -->
+                </button>
+              </a>
+              <button onclick="viewEmployees(3)">
+                <i class="fas fa-eye"></i> <!-- View icon -->
+              </button>
             </td>
-          </tr>
           </tr>
           <!-- Add more rows as needed -->
         </tbody>
       </table>
-
+  
       <!-- Add a section to display employees -->
       <section id="employeeList">
         <ul id="employeeDetails"></ul>

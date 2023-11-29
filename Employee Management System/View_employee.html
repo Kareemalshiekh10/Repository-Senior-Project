@@ -7,6 +7,7 @@
   <title>Employee Management System</title>
   <link rel="stylesheet" href="./css/Sidebar.css">
   <link rel="stylesheet" href="./css/View_employee.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
@@ -63,11 +64,10 @@
             <th>Email</th>
             <th>Phone</th>
             <th>Joining Date</th>
-            <th>Action</th> <!-- New column for delete buttons -->
+            <th>Action</th> <!-- New column for delete and edit icons -->
           </tr>
         </thead>
         <tbody>
-          <tr>
           <tr data-id="1">
             <td>1</td>
             <td>John Doe</td>
@@ -76,10 +76,15 @@
             <td>john.doe@example.com</td>
             <td>(555) 123-4567</td>
             <td>2023-01-01</td>
-            <td><button onclick="deleteEmployee(1)">Delete</button> <button onclick="editEmployee(1)">Edit</button></td>
+            <td>
+              <button onclick="deleteEmployee(1)">
+                <i class="fas fa-trash-alt"></i> <!-- Delete icon -->
+              </button>
+              <button onclick="editEmployee(1)">
+                <i class="fas fa-edit"></i> <!-- Edit icon -->
+              </button>
+            </td>
           </tr>
-          </tr>
-          <tr>
           <tr data-id="2">
             <td>2</td>
             <td>Jane Smith</td>
@@ -88,10 +93,15 @@
             <td>jane.smith@example.com</td>
             <td>(555) 987-6543</td>
             <td>2023-02-15</td>
-            <td><button onclick="deleteEmployee(2)">Delete</button> <button onclick="editEmployee(2)">Edit</button></td>
+            <td>
+              <button onclick="deleteEmployee(2)">
+                <i class="fas fa-trash-alt"></i> <!-- Delete icon -->
+              </button>
+              <button onclick="editEmployee(2)">
+                <i class="fas fa-edit"></i> <!-- Edit icon -->
+              </button>
+            </td>
           </tr>
-          </tr>
-          <tr>
           <tr data-id="3">
             <td>3</td>
             <td>Bob Johnson</td>
@@ -100,13 +110,18 @@
             <td>bob.johnson@example.com</td>
             <td>(555) 876-5432</td>
             <td>2023-03-20</td>
-            <td><button onclick="deleteEmployee(3)">Delete</button> <button onclick="editEmployee(3)">Edit</button></td>
-          </tr>
+            <td>
+              <button onclick="deleteEmployee(3)">
+                <i class="fas fa-trash-alt"></i> <!-- Delete icon -->
+              </button>
+              <button onclick="editEmployee(3)">
+                <i class="fas fa-edit"></i> <!-- Edit icon -->
+              </button>
+            </td>
           </tr>
           <!-- Add more rows as needed -->
         </tbody>
       </table>
-
     </div>
   </section>
 
