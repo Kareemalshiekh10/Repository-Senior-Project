@@ -1,0 +1,86 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cecece;
+    margin: 0;
+}
+
+.content {
+    padding: 20px;
+    margin-top: 80px;
+}
+
+h2 {
+    text-align: center;
+    color: #384863;
+    font-size: 24px;
+    padding: 10px 0;
+    border-bottom: 2px solid #384863;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 70px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+textarea.description-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea.description-field:focus {
+    border-color: #384863;
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #384863;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #546987;
+}
+
+.description-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    /* Allows vertical resizing */
+    min-height: 100px;
+    /* Set a minimum height */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="css/Sidebar.css">
+    <link rel="stylesheet" href="css/Annual_Increase.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!------------------------------------------------------------------------ sidebar starts------------------------------------------------------------------------ -->
+    <div class="sidebar">
+        <div class="user-profile">
+            <div class="centered">
+                <img src="./img/download.png" alt="User's Profile Picture" class="profile-picture">
+                <p class="user-name">Employee's Name</p>
+            </div>
+        </div>
+        <div class="menu-links">
+            <a href="#" class="dropdown-trigger">Employees</a>
+            <div class="dropdown-content">
+                <a href="./View_employee.html">View Employee</a>
+                <a href="./Add_employee.html">Add Employee</a>
+                <a href="./Edit_employee.html">Edit Employee</a>
+                <!-- Add more dropdown links as needed -->
+            </div>
+            <a href="#" class="dropdown-trigger">Department</a>
+            <div class="dropdown-content">
+                <a href="./View_department.html">View Department</a>
+                <a href="./Add_department.html">Add Department</a>
+                <a href="./Edit_department.html">Edit Department</a>
+                <!-- Add more links as needed -->
+            </div>
+            <a href="#" class="dropdown-trigger">Loans</a>
+            <div class="dropdown-content">
+                <a href="./View_loans.html">View Loans</a>
+                <a href="./Add_loans.html">Add Loans</a>
+                <!-- Add more dropdown links as needed -->
+            </div>
+            <a href="#" class="dropdown-trigger">Incentives</a>
+            <div class="dropdown-content">
+                <a href="./View_Incentives.html">View Incentives</a>
+                <a href="./Add_incentives.html">Add Incentives</a>
+            </div>
+            <a href="#" class="dropdown-trigger">Annual Increase</a>
+            <div class="dropdown-content">
+                <a href="./View_Annual_Increase.html">View Annual Increase</a>
+                <a href="./Add_Annual_Increase.html">Add Annual Increase</a>
+                <!-- Add more dropdown links as needed -->
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------ sidebar ends------------------------------------------------------------------------ -->
+    <section>
+        <div class="container">
+            <h2>Employee Annual Increase Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Current Salary</th>
+                        <th>Annual Increase Percentage</th>
+                        <th>Annual Increase Amount</th>
+                        <th>New Salary</th>
+                        <th>Reason for Increase</th>
+                        <th>Action</th> <!-- New column for delete and edit icons -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-id="1">
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>12000</td>
+                        <td>5%</td>
+                        <td>600</td>
+                        <td>12600</td>
+                        <td>worked for two more hours</td>
+                        <td>
+                            <button onclick="deleteEmployee(1)">
+                                <i class="fas fa-trash-alt"></i> <!-- Delete icon -->
+                            </button>
+                            <button onclick="editEmployee(1)">
+                                <i class="fas fa-edit"></i> <!-- Edit icon -->
+                            </button>
+                        </td>
+                    </tr>
+                    <tr data-id="2">
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>20000</td>
+                        <td>30%</td>
+                        <td>6000</td>
+                        <td>36000</td>
+                        <td>saved time, resources for the company</td>
+                        <td>
+                            <button onclick="deleteEmployee(2)">
+                                <i class="fas fa-trash-alt"></i> <!-- Delete icon -->
+                            </button>
+                            <button onclick="editEmployee(2)">
+                                <i class="fas fa-edit"></i> <!-- Edit icon -->
+                            </button>
+                        </td>
+                    </tr>
+                    <tr data-id="3">
+                        <td>3</td>
+                        <td>Bob Johnson</td>
+                        <td>5000</td>
+                        <td>22%</td>
+                        <td>1100</td>
+                        <td>6100</td>
+                        <td>provide unique content and new ideas</td>
+                        <td>
+                            <button onclick="deleteEmployee(3)">
+                                <i class="fas fa-trash-alt"></i> <!-- Delete icon -->
+                            </button>
+                            <button onclick="editEmployee(3)">
+                                <i class="fas fa-edit"></i> <!-- Edit icon -->
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="./js/View employee.js"></script>
+</body>
+
+</html>

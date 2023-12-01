@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E3E6E6;
+    font-family: sans-serif;
+}
+
+.top_buttons {
+    text-align: center;
+}
+
+.buttonx {
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 20px;
+    color: #757577;
+    font-size: 20px;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.buttonx::after {
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 2px;
+    width: 0;
+    background-color: #ff7878;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out
+}
+
+.buttonx:hover {
+    color: #ff7878;
+}
+
+.buttonx:hover::after {
+    width: 100%;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.row_catt {
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+
+
+.card {
+    height: 100%;
+    width: 25%;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    transition: 0.5s all;
+    transform: scale(1.05, 1.05);
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card-img-top {
+    width: 100%;
+}
+
+.card .sale {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    background-color: rgb(163, 157, 26);
+    z-index: 1;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 16px;
+}
+
+.kora {
+    position: absolute;
+    background-color: #2d3345;
+    width: 250px;
+    height: 250px;
+    bottom: -600px;
+    left: -600px;
+    border-radius: 50%;
+
+}
+
+.card:hover .kora {
+    bottom: -80px;
+    left: -80px;
+}
+
+.card:hover {
+    /* box-shadow: 4px 4px rgba(0, 0, 0, 0.3); */
+    transform: scale(0.95, 0.95);
+}
+
+.card:hover img {
+    opacity: 0.5;
+}
+
+.card:hover .textfilkora {
+    bottom: 1px;
+    left: 5px;
+
+
+}
+
+.card:hover .old-price {
+    bottom: 40px;
+    left: 5px;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.card:hover .new-price {
+    bottom: 60px;
+    left: 5px;
+    font-size: 13px;
+    display: inline-block;
+    color: #f53939;
+}
+
+.add1 {
+    bottom: 70px;
+    left: 50px;
+    display: inline-block;
+    margin-top: 100px;
+    background-color: #95bf47;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover .add1:hover {
+    border-color: #95bf47;
+    background-color: #fff;
+    color: #95bf47;
+}
+
+.textfilkora {
+    position: fixed;
+    bottom: -400px;
+    left: -400px;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #E3E6E6;
+
+}
+
+.card span {
+    position: fixed;
+    bottom: -400px;
+    left: -400px;
+    font-size: larger;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #E3E6E6;
+}
+
+.card img {
+    height: 100%;
+
+}
