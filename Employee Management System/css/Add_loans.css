@@ -5,6 +5,7 @@ body {
   margin: 0;
 }
 
+
 .content {
   padding: 20px;
   margin-top: 80px;
@@ -19,15 +20,15 @@ h2 {
   text-transform: uppercase;
 }
 
-
 form {
-  max-width: 500px;
-  margin: auto;
-  margin-top: 70px;
+  width: 80%;
+  margin-top: 40px;
+  margin-left: 290px;
   background-color: #fff;
-  padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+ 
 }
 label {
   font-weight: bold;
@@ -39,7 +40,7 @@ input[type="date"],
 input[type="tel"],
 input[type="email"],
 textarea.description-field {
-  width: 100%;
+  width: 98%;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
