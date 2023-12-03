@@ -1,9 +1,18 @@
-function deleteDepartment(id) {
-    const row = document.querySelector(`tr[data-id="${id}"]`);
-    if (row) {
-        row.remove();
+function deleteDepartment(departmentId) {
+    const confirmed = confirm("Are you sure you want to delete this Department?");
+    if (confirmed) {
+        // Implement your deletion logic here
+        // For example, let's remove the row from the table for now
+        const row = document.querySelector(`tr[data-id="${departmentId}"]`);
+        if (row) {
+            row.remove();
+        }
+    } else {
+        // User clicked Cancel, do nothing or handle accordingly
+        console.log("Department deletion canceled.");
     }
 }
+
 
 // Function to view employees in a department
 function viewEmployees(id) {
