@@ -1,15 +1,8 @@
-/* Body styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #cecece;
+  background-color: #cecece !important;
   margin: 0;
 }
 
-
-.content {
-  padding: 20px;
-  margin-top: 80px;
-}
 h2 {
   text-align: center;
   color: #384863;
@@ -23,7 +16,7 @@ h2 {
 form {
   width: 80%;
   margin-top: 40px;
-  margin-left: 290px;
+  margin-left: 320px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -58,27 +51,18 @@ textarea.description-field:focus {
 }
 
 input[type="submit"] {
-  width: 100%;
+  width: 20%; /* Make the button take full width */
   padding: 10px;
   border: none;
   border-radius: 5px;
   background-color: #384863;
   color: #fff;
   cursor: pointer;
-  transition: background-color 0.3s;
+  /* margin-top: 100px; */ /* Space between fields and button */
+  margin-right: 700px;
 }
 
 input[type="submit"]:hover {
   background-color: #546987;
 }
 
-.description-field {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  resize: vertical; /* Allows vertical resizing */
-  min-height: 100px; /* Set a minimum height */
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
