@@ -8,51 +8,68 @@
   <link rel="stylesheet" href="./css/Sidebar.css">
   <link rel="stylesheet" href="./css/Departments.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-  <!------------------------------------------------------------------------ sidebar starts------------------------------------------------------------------------ -->
-  <div class="sidebar">
-    <div class="user-profile">
-      <div class="centered">
-        <img src="./img/download.png" alt="User's Profile Picture" class="profile-picture">
-        <p class="user-name">Employee's Name</p>
-      </div>
-    </div>
-    <div class="menu-links">
-      <a href="#" class="dropdown-trigger">Employees</a>
-      <div class="dropdown-content">
-        <a href="./View_employee.html">View Employee</a>
-        <a href="./Add_employee.html">Add Employee</a>
-        <a href="./Edit_employee.html">Edit Employee</a>
-        <!-- Add more dropdown links as needed -->
-      </div>
-      <a href="#" class="dropdown-trigger">Department</a>
-      <div class="dropdown-content">
-        <a href="./View_department.html">View Department</a>
-        <a href="./Add_department.html">Add Department</a>
-        <a href="./Edit_department.html">Edit Department</a>
-        <!-- Add more links as needed -->
-      </div>
-      <a href="#" class="dropdown-trigger">Loans</a>
-      <div class="dropdown-content">
-        <a href="./View_loans.html">View Loans</a>
-        <a href="./Add_loans.html">Add Loans</a>
-        <!-- Add more dropdown links as needed -->
-      </div>
-      <a href="#" class="dropdown-trigger">Incentives</a>
-      <div class="dropdown-content">
-        <a href="./View_Incentives.html">View Incentives</a>
-        <a href="./Add_incentives.html">Add Incentives</a>
+ <!------------------------------------------------------------------------ side&nav bars starts------------------------------------------------------------------------ -->
+ <nav class="navbar">
+  <div class="navbar-left">
 
-        <!-- Add more dropdown links as needed -->
-      </div>
+    <span class="navbar-brand">Employee Management System</span>
+  </div>
+  <div class="navbar-right">
+    <a href="#"><i class="fas fa-bell"></i></a>
+    <a href="#"><i class="fas fa-user-cog"></i></a>
+    <!-- <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a> -->
+  </div>
+</nav>
+
+<div class="sidebar">
+  <div class="user-profile">
+    <div class="centered">
+      <img src="./img/download.png" alt="User's Profile Picture" class="profile-picture">
+      <p class="user-name">Employee's Name</p>
     </div>
   </div>
-  <!------------------------------------------------------------------------ sidebar ends------------------------------------------------------------------------ -->
+  <div class="menu-links">
+    <a href="#" class="dropdown-trigger">Employees</a>
+    <div class="dropdown-content">
+      <a href="./Employees.html">View Employee</a>
+      <a href="./Add_employee.html">Add Employee</a>
+      <a href="./Edit_employee.html">Edit Employee</a>
+      <!-- Add more dropdown links as needed -->
+    </div>
+    <a href="#" class="dropdown-trigger">Department</a>
+    <div class="dropdown-content">
+      <a href="./Departments.html">View Department</a>
+      <a href="./Add_department.html">Add Department</a>
+      <a href="./Edit_department.html">Edit Department</a>
+      <!-- Add more links as needed -->
+    </div>
+    <a href="#" class="dropdown-trigger">Loans</a>
+    <div class="dropdown-content">
+      <a href="./Loans.html">View Loans</a>
+      <a href="./Add_loans.html">Add Loans</a>
+      <!-- Add more dropdown links as needed -->
+    </div>
+    <a href="#" class="dropdown-trigger">Incentives</a>
+    <div class="dropdown-content">
+      <a href="./Incentives.html">View Incentives</a>
+      <a href="./Add_incentives.html">Add Incentives</a>
+
+      <!-- Add more dropdown links as needed -->
+    </div>
+  </div>
+</div>
+<!------------------------------------------------------------------------ side&nav bars ends------------------------------------------------------------------------ -->
   <section>
-    <div class="container">
+    <div class="container1">
       <h2>Department</h2>
       <table>
         <thead>
