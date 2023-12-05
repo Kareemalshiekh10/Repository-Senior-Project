@@ -83,3 +83,13 @@ let buy = () =>{
     }
     
 }
+function showPaymentDetails() {
+    var paymentMethod = document.getElementById("paymentMethod").value;
+    if (paymentMethod === "cashOnDelivery") {
+      document.getElementById("cashOnDeliveryDetails").style.display = "block";
+      document.getElementById("creditCardDetails").style.display = "none";
+    } else if (paymentMethod === "creditCard") {
+      document.getElementById("cashOnDeliveryDetails").style.display = "none";
+      document.getElementById("creditCardDetails").style.display = "block";
+    }
+  }

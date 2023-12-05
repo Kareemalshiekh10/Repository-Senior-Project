@@ -1,10 +1,20 @@
-#container {
-  width: 900px;
-  margin: auto;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+body{
+  background-color: #d2d2d2;
 }
-
+.container1 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #fff; /* Background Color for Content */
+  border-radius: 10px;
+  box-shadow: 0 0 20px #28304B;
+  padding: 20px;
+}
+h1{
+  color: #28304B;
+}
 #products {
   width: 100%;
   display: flex;
@@ -17,7 +27,7 @@
   padding: 0px 30px;
 }
 #products > div:first-child p + p {
-  color: teal;
+  color: #5d71af;
   font-size: small;
   cursor: pointer;
 }
@@ -30,7 +40,7 @@
   margin-bottom: 20px;
 }
 #info > p:nth-of-type(odd) {
-  color: teal;
+  color: #5d71af;
 }
 #info > p:nth-of-type(even) {
   font-size: small;
@@ -78,7 +88,7 @@
 #details > div input + p,
 #details p + p {
   font-size: small;
-  color: teal;
+  color: #28304B;
   cursor: pointer;
 }
 #details p + p:nth-child(2) {
@@ -90,13 +100,13 @@
   display: block;
   margin: auto;
   margin-top: 20px;
-  background-color: teal;
+  background-color: #28304B;
   color: white;
   font-weight: bold;
   border: none;
 }
 #details > div:last-child button:hover {
-  background-color: rgb(5, 171, 171);
+  background-color: #5d71af;
 }
 #last {
   font-size: x-large;
@@ -104,5 +114,5 @@
 }
 #details > div > p:first-child,
 #details > div > div > p {
-  color: teal;
+  color: #49598b;
 }
