@@ -141,11 +141,11 @@ body {
 
 
 
-#product1 {
+ #product1 {
   text-align: center;
-}
+} 
 
-#product1 .pro-container {
+/* #product1 .pro-container {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
@@ -222,8 +222,7 @@ body {
   position: absolute;
   bottom: 20px;
   right: 10px;
-}
-
+} */
 
 
 
@@ -283,6 +282,71 @@ body {
  .copyright {
   width: 100%;
   text-align: center;
+}
+
+
+.best-deal-section {
+  margin-top: 0.5rem;
+  padding: 2rem;
+  background-color:white;
+}
+
+.best-deal-section .section-header {
+  text-align: center;
+}
+
+.best-deal-section .section-header h1 {
+  font-weight: 700;
+  font-size: 4.5rem;
+  font-family: "Oswald", sans-serif;
+  color: #4260b1;
+  text-transform: uppercase;
+}
+
+.best-deal-section .section-header h2 {
+  font-weight: 100;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  font-family: "Oswald", sans-serif;
+  color: #ff6868;
+}
+
+.best-deal-section .product-card {
+  width: 18rem;
+  margin-top:0.1rem;
+  margin-bottom:  0.1rem;
+}
+
+.best-deal-section .product-card .offer-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.best-deal-section .product-card .card-body h5 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #727272;
+  text-transform: capitalize;
+  font-family: "Oswald", sans-serif;
+}
+
+.best-deal-section .product-card .card-body p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffcb27;
+  text-transform: capitalize;
+  font-family: "Oswald", sans-serif;
+}
+
+.best-deal-section .product-card .btn {
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  color: #222;
+  background: #4260b1;
+  border: 2px solid #4260b1;
 }
 
 
