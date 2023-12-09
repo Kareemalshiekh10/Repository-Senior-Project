@@ -1,13 +1,12 @@
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #cecece;
+    background-color: #cecece !important;
     margin: 0;
   }
-.container {
-    width: 80%;
+.container1 {
+    width: 80% ;
     margin-top: 40px;
-    margin-left: 260px;
-    
+    margin-left: 300px;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -18,10 +17,11 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 2px solid #ddd !important;
     padding: 12px;
     text-align: left;
 }
@@ -34,6 +34,7 @@ h2 {
     margin-bottom: 20px;
     text-transform: uppercase;
 }
+
 th {
     background-color: #384863;
     color: #fff;
@@ -44,6 +45,5 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr:hover {
-    background-color: #ddd;
-    transition: background-color 0.3s;
+    background-color: #ececec;
 }

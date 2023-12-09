@@ -72,10 +72,10 @@
 .ButtonInPg{
     font-size: large;
     text-decoration: none;
-    padding-left: 5%;
-    padding-top: 100px;
-    padding-bottom: 150px;
-       
+    margin: 120px;
+    background-color:#28304B;
+    color: white;
+    
 }
 .ButtonInPgDiv
 { text-align: center;
@@ -84,7 +84,7 @@
 .Features h2{
     text-align: center;
     color: #000;
-    margin-top: 20px;
+    margin: 20px;
 
 }
 .Feature1{
@@ -92,7 +92,8 @@
     border-radius: 20px;
     color: #fff;
     height: 100%;
-    padding: 50px 10px;
+    padding: 50px 15px;
+    padding-right: 15px;
     margin-right: 250px;
     margin-left: 250px;
     display: flex;
@@ -102,16 +103,17 @@
 }
 .Feature1image img{
 width: 500px;
-padding-right: 20px;
+border-radius: 10px;
 
 
 }
 .Feature1 p{
     box-sizing: border-box;
     margin-bottom: 5rem;
-  
-  font-weight: 500;
-  color: inherit;
+    font-weight: 400;
+    font-size: 18px;
+    color: inherit;
+    font-style: inherit;
 }
 
 .Feature2{
@@ -120,7 +122,8 @@ padding-right: 20px;
     border-radius: 20px;
     color: #fff;
     height: 100%;
-    padding: 50px 10px;
+    padding: 50px 15px;
+    padding-right: 15px;
     margin-right: 250px;
     margin-left: 250px;
     display: flex;
@@ -130,16 +133,18 @@ padding-right: 20px;
 }
 .Feature2image img{
 width: 500px;
-padding-right: 20px;
+border-radius: 10px;
 
 
 }
 .Feature2 p{
-    box-sizing: border-box;
-    margin-bottom: 5rem;
-  font-family: inherit;
-  font-weight: 500;
+  box-sizing: border-box;
+  margin-bottom: 5rem;
+  font-weight: 400;
+  font-size: 18px;
   color: inherit;
+  font-style: inherit;
+
 }
 
 .Feature3{
@@ -148,27 +153,30 @@ padding-right: 20px;
     border-radius: 20px;
     color: #fff;
     height: 100%;
-    padding: 50px 10px;
+    padding: 50px 15px;
+    padding-right: 15px;
     margin-right: 250px;
     margin-left: 250px;
     display: flex;
-
+    margin-bottom: 20px;
+  
     
    
 
 }
 .Feature3image img{
 width: 500px;
-padding-right: 20px;
-
+border-radius: 10px;
 
 }
 .Feature3 p{
-    box-sizing: border-box;
-    margin-bottom: 5rem;
-  
-  font-weight: 500;
+  box-sizing: border-box;
+  margin-bottom: 5rem;
+  font-weight: 400;
+  font-size: 18px;
   color: inherit;
+  font-style: inherit;
+ 
 }
 #Text1{
     border-radius: 15px;
@@ -195,73 +203,79 @@ padding-right: 20px;
 }
 
 
-
-body {
-    font-family: Arial, sans-serif;
-    
-    background-color: #fcfdff; /* Background color */
+.section-header {
+  text-align: center;
+}
+.section-p1 {
+  padding: 40px 80px;
 }
 
-.contact-header {
-    background-color: #28304B; /* Primary Color (Navbar Background) */
-    color: #fff; /* Text Color */
-    text-align: center;
-    padding: 20px;
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.contact-header h1 {
-    margin: 0;
-}
-.contact-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: #fff; /* Background Color for Content */
-    border-radius: 10px;
-    box-shadow: 0 0 20px #28304B;
-    padding: 20px;
+#feature .fe-box {
+  width: 180px;
+  text-align: center;
+  margin: 15px 0;
 }
 
-.contact-section {
-    margin-bottom: 20px;
-    padding: 20px;
-    border-bottom: 1px solid #ccc; /* Border Color */
+#feature .fe-box:hover {
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#feature .fe-box img {
+  width: 100%;
+  margin-bottom: 10px;
+  
 }
 
-.contact-form .form-group {
-    margin-bottom: 20px;
+#feature .fe-box h6 {
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #28304B;
+}
+#feature .fe-box p {
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #28304B;
 }
 
-.contact-form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+.lastinpage{
+  text-align: center;
+  
+}
+.lastinpage p{
+  font-size: 18px;
+  max-width: 1500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px ;
+  padding-right: 50px;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #28304B;
-    border-radius: 5px;
-    margin: 5px 0;
-}
 
-.contact-form button[type="submit"] {
-    background-color: #28304B; /* Primary Color (Navbar Background) */
-    color: #fff; /* Text Color */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
-.contact-form button[type="submit"]:hover {
-    background-color: #1F2538; /* Darker shade for hover effect */
-}
+
+
+
+
+
+
+
+
+
+
+
+
 body,
 html {
   margin: 0;

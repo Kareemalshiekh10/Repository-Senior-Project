@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Management System</title>
+  <link rel="stylesheet" href="./css/Sidebar.css">
+  <link rel="stylesheet" href="./css/Add&Edit_Pages.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+   <!------------------------------------------------------------------------ side&nav bars starts------------------------------------------------------------------------ -->
+   <nav class="navbar">
+    <div class="navbar-left">
+
+      <span class="navbar-brand">Employee Management System</span>
+    </div>
+    <div class="navbar-right">
+      <a href="#"><i class="fas fa-bell"></i></a>
+      <a href="#"><i class="fas fa-user-cog"></i></a>
+      <!-- <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a> -->
+    </div>
+  </nav>
+
+  <div class="sidebar">
+    <div class="user-profile">
+      <div class="centered">
+        <img src="./img/download.png" alt="User's Profile Picture" class="profile-picture">
+        <p class="user-name">Employee's Name</p>
+      </div>
+    </div>
+    <div class="menu-links">
+      <a href="#" class="dropdown-trigger">Employees</a>
+      <div class="dropdown-content">
+        <a href="./Employees.html">View Employee</a>
+        <a href="./Add_employee.html">Add Employee</a>
+        <a href="./Edit_employee.html">Edit Employee</a>
+        <!-- Add more dropdown links as needed -->
+      </div>
+      <a href="#" class="dropdown-trigger">Department</a>
+      <div class="dropdown-content">
+        <a href="./Departments.html">View Department</a>
+        <a href="./Add_department.html">Add Department</a>
+        <a href="./Edit_department.html">Edit Department</a>
+        <!-- Add more links as needed -->
+      </div>
+      <a href="#" class="dropdown-trigger">Loans</a>
+      <div class="dropdown-content">
+        <a href="./Loans.html">View Loans</a>
+        <a href="./Add_loan.html">Add Loans</a>
+        <a href="./Edit_Loan.html">Edit Loans</a>
+        <!-- Add more dropdown links as needed -->
+      </div>
+      <a href="#" class="dropdown-trigger">Incentives</a>
+      <div class="dropdown-content">
+        <a href="./Incentives.html">View Incentives</a>
+        <a href="./Add_incentives.html">Add Incentives</a>
+        <a href="./Edit_Incentive.html">Edit Incentives</a>
+        <!-- Add more dropdown links as needed -->
+      </div>
+      
+      <a href="#" class="dropdown-trigger">Branches</a>
+      <div class="dropdown-content">
+        <a href="Branches.html">View Branches</a>
+        <a href="Add_Branches.html">Add Branches</a>
+        <a href="Edit_Branches.html">Edit Branches</a>
+        <!-- Add more links as needed -->
+      </div>
+      <a href="#" class="dropdown-trigger">Deductions</a>
+      <div class="dropdown-content">
+        <a href="Deductions.Html">View Deductions</a>
+        <a href="Add_Deductions.html">Add Deductions</a>
+        <a href="Edit_Deductions.html">Edit Deductions</a>
+        <!-- Add more links as needed -->
+      </div>
+
+    </div>
+  </div>
+  <!------------------------------------------------------------------------ side&nav bars Ends------------------------------------------------------------------------ -->
+  <form class="form" id="AddBranchForm">
+    <h2>Add Branch</h2>
+    <div class="row gy-1 h-100">
+      <div class="col-6">
+        <label class="form-label">Branch Name</label>
+        <input type="text" id="branchName" name="branchName" class="form-control"
+          placeholder="e.g., IntellMart " aria-label="branchName">
+      </div>
+
+      <div class="col-6">
+        <label class="form-label">Location</label>
+        <input type="text" id="branchLocation" name="branchLocation" class="form-control"
+          placeholder="e.g., 123 Main St" aria-label="branchLocation">
+      </div>
+
+      <div class="col-6">
+        <label class="form-label">Phone Number</label>
+        <input type="tel" id="branchPhone" name="branchPhone" class="form-control"
+          placeholder="e.g., (555) 123-4567" aria-label="branchPhone">
+      </div>
+      
+      <div class="col-6">
+        <label class="form-label">Number of Employees</label>
+        <input type="number" id="numberOfEmployee" name="numberOfEmployee" class="form-control"
+          placeholder="e.g., 10" aria-label="numberOfEmployee">
+      </div>
+      
+      <div class="col-6">
+        <label class="form-label">Manager Name</label>
+        <input type="text" id="managerName" name="managerName" class="form-control"
+          placeholder="e.g.,John Doe" aria-label="managerName">
+      </div>
+
+      <div class="col-6">
+        <label class="form-label">Manager Email</label>
+        <input type="email" id="managerEmail" name="managerEmail" class="form-control"
+          placeholder="e.g., ABC@example.com" aria-label="managerEmail">
+      </div>
+
+
+      <div class="col-6">
+        <label class="form-label">Opening Date</label>
+        <input type="date" id="branchOpeningDate" name="branchOpeningDate" class="form-control"
+          placeholder="YYYY-MM-DD" aria-label="branchOpeningDate">
+      </div>
+      <br>
+      <input type="submit" value="Add Branch" class="btn btn-primary">
+    </div>
+
+  </form>
+</body>
+
+</html>
